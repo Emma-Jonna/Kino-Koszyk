@@ -1,0 +1,29 @@
+header {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  height: 100vh;
+  width: 30%;
+  background-color: #1f1d19;
+}
+
+nav {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  position: sticky;
+  padding: 2rem;
+  height: 60vh;
+  width: 10rem;
+}
+
+nav a {
+  text-decoration: none;
+  color: white;
+  width: 10rem;
+}
+
+nav img {
+  justify-self: center;
+  width: 15rem;
+}
