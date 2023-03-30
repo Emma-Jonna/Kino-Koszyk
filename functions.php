@@ -1,5 +1,16 @@
 <?php
 
+
+
+add_action("init", function () {
+    $array = ["books", "photos", "news", "films"];
+    foreach ($array as $key) {
+        add_theme_support('post-thumbnails');
+        add_post_type_support($key, 'thumbnail');
+    }
+});
+
+
 function register_theme_menus()
 {
     register_nav_menus(array(
@@ -35,9 +46,10 @@ add_action("init", function () {
             "singular_name" => __("Books"),
         ),
         "public" => true,
-        "has_archive" => true,
+        "has_archive" => false,
         'rewrite' => array('slug' => 'books'),
         "menu_icon" => "dashicons-thumbs-down",
+
     ));
 });
 
