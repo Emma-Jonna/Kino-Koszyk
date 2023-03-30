@@ -26,7 +26,7 @@ add_action("init", function () {
             "singular_name" => __("Films"),
         ),
         "public" => true,
-        "has_archive" => true,
+        "has_archive" => false,
         'rewrite' => array('slug' => 'films'),
         "menu_icon" => "ph:film-reel-bold",
     ));
@@ -36,7 +36,7 @@ add_action("init", function () {
             "singular_name" => __("Photos"),
         ),
         "public" => true,
-        "has_archive" => true,
+        "has_archive" => false,
         'rewrite' => array('slug' => 'photos'),
         "menu_icon" => "dashicons-thumbs-down",
     ));

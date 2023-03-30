@@ -1,13 +1,13 @@
 <?php get_header(); ?>
 <?php
 $args = array(
-    "post_type" => "books",
+    "post_type" => "films",
     "orderby" => "date",
     "order" => "DESC",
 );
 $latest_posts_query = new WP_Query($args);
 ?>
-<section class="books">
+<section class="films">
     <div>
         <h2>
             <?= the_title(); ?>
@@ -24,7 +24,7 @@ $latest_posts_query = new WP_Query($args);
         <?php if (have_posts()) : ?>
             <div class="gallery-wrapper">
                 <?php while ($latest_posts_query->have_posts()) :               $latest_posts_query->the_post();
-                    get_template_part("parts/shared/post", "books"); ?>
+                    get_template_part("parts/shared/post", "films"); ?>
                 <?php endwhile; ?>
             </div>
         <?php endif; ?>
