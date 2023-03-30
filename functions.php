@@ -1,12 +1,45 @@
-<?php 
+<?php
 
 function register_theme_menus()
 {
     register_nav_menus(array(
-        'nav-menu' => __('Navigation Menu')
+        'nav-menu' => __('Navigation Menu'),
     ));
 }
 add_action('init', 'register_theme_menus');
+
+add_action("init", function () {
+    register_post_type("films", array(
+        "labels" => array(
+            "name" => __("Films"),
+            "singular_name" => __("Films"),
+        ),
+        "public" => true,
+        "has_archive" => true,
+        'rewrite' => array('slug' => 'films'),
+        "menu_icon" => "ph:film-reel-bold",
+    ));
+    register_post_type("photos", array(
+        "labels" => array(
+            "name" => __("Photos"),
+            "singular_name" => __("Photos"),
+        ),
+        "public" => true,
+        "has_archive" => true,
+        'rewrite' => array('slug' => 'photos'),
+        "menu_icon" => "dashicons-thumbs-down",
+    ));
+    register_post_type("books", array(
+        "labels" => array(
+            "name" => __("Books"),
+            "singular_name" => __("Books"),
+        ),
+        "public" => true,
+        "has_archive" => true,
+        'rewrite' => array('slug' => 'books'),
+        "menu_icon" => "dashicons-thumbs-down",
+    ));
+});
 
 function print_a($data)
 {

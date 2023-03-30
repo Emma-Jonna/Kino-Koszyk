@@ -8,8 +8,8 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@500&family=DM+Sans:wght@500&family=Oi&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="<?=get_template_directory_uri()?>/css/header.css">
-    <link rel="stylesheet" href="<?=get_template_directory_uri()?>/style.css">
+    <link rel="stylesheet" href="<?= get_template_directory_uri() ?>/css/header.css">
+    <link rel="stylesheet" href="<?= get_template_directory_uri() ?>/style.css">
     <?php wp_head(); ?>
 </head>
 
@@ -17,13 +17,17 @@
     <?php wp_body_open(); ?>
     <header>
         <nav>
-            <img src="<?=get_template_directory_uri()?>/assets/Kino-Koszyk-logo.svg" alt="Logo">
-        <?php 
-            $nav_menu = wp_get_nav_menu_items('Navigation Menu');
+            <img src="<?= get_template_directory_uri() ?>/assets/Kino-Koszyk-logo.svg" alt="Logo">
+            <ul>
+                <?php
+                $nav_menu = wp_get_nav_menu_items('Navigation Menu');
                 if ($nav_menu) foreach ($nav_menu as $item) : ?>
-                    <a title="<?= $item->title; ?>" href="<?= $item->url; ?>">
-                        <?= $item->title; ?>
-                    </a>
+                    <li>
+                        <a title="<?= $item->title; ?>" href="<?= $item->url; ?>">
+                            <?= $item->title; ?>
+                        </a>
+                    </li>
                 <?php endforeach; ?>
+            </ul>
         </nav>
     </header>
