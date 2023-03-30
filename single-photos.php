@@ -1,0 +1,1 @@
+<h1>Single Photos</h1>

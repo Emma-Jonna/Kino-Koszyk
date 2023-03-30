@@ -1,5 +1,5 @@
 <?php
 get_header();
 ?>
-
-<?php get_footer()?>
+Hej
+<?php get_footer() ?>
