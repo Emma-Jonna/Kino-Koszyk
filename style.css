@@ -15,6 +15,7 @@ body {
   margin: 0;
 }
 
-div {
+div,
+section {
   padding-left: 350px;
 }
