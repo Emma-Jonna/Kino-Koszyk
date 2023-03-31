@@ -1,3 +1,10 @@
 <?php get_header(); ?>
-<h1>this is the about page</h1>
+<div>
+    <h2>
+        <?= the_title(); ?>
+    </h2>
+    <p>
+        <?= the_content(); ?>
+    </p>
+</div>
 <?php get_footer(); ?>

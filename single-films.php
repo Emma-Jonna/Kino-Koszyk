@@ -12,7 +12,6 @@ if (have_posts()) : ?>
                 </div>
                 <div>
                     <div>Single Film</div>
-                    <?php the_field('product_details'); ?>
                 </div>
             </div>
         </div>
