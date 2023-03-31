@@ -13,8 +13,32 @@ if (have_posts()) : ?>
                 </div>
                 <div>
                     <div>Single Film</div>
-                    <?php get_template_part("parts/shared/post", "gallery"); ?>
+                    <!-- <?php get_template_part("parts/shared/post", "gallery"); ?> -->
                 </div>
+
+                <?php var_dump(get_field("video")); ?>
+
+                <iframe width="560" height="315" src=<?php echo get_field("video"); ?> title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
+                <!-- <video controls muted autoplay src=""></video> -->
+
+                <!-- <?php
+                        $fields = get_field();
+
+                        if ($fields) {
+                            for ($i = 1; $i < count($fields) + 1; $i++) {
+                                $imageNr = "image_$i";
+
+                                if ($fields[$imageNr]) {
+                        ?>
+                            <img src="<?php echo $fields[$imageNr]['url'] ?>" alt="">
+                <?php
+                                } else {
+                                    echo "hello";
+                                }
+                            }
+                        }
+                ?> -->
             </div>
         </div>
 
