@@ -1,7 +1,5 @@
 <?php
 
-
-
 add_action("init", function () {
     $array = ["books", "photos", "news", "films"];
     foreach ($array as $key) {
@@ -59,3 +57,25 @@ function print_a($data)
     <pre class="block p-6 m-6 border border-brown rounded-xl text-xs overflow-hidden"><code><?php print_r($data); ?></code></pre>
 <?php
 }
+
+add_action("init", function () {
+    add_theme_support("widgets");
+});
+
+add_action("init", function () {
+    register_sidebar(array(
+        "name" => ("Footer Contact Section"),
+        "id" => "footer-contact",
+        "description" => "Changes the contact content of the footer"
+    ));
+    register_sidebar(array(
+        "name" => ("Footer Address Section"),
+        "id" => "footer-address",
+        "description" => "Changes the text content of the footer"
+    ));
+});
+
+add_action("wp_enqueue_scripts", function () {
+    wp_enqueue_style( 'custom-style', get_template_directory_uri() . '/css/footer.css', false, "1.0", "all" );
+    wp_enqueue_style( 'custom-style', get_template_directory_uri() . '/css/header.css', false, "1.0", "all" );
+});

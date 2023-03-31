@@ -1,0 +1,26 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.footer {
+    background-color: #3C3C3C;
+    margin-left: 20vw;
+    margin-bottom: 0;
+    list-style-type: none;
+    color: white;
+    font-family: sans-serif;
+    padding: 1rem;
+}
+
+.footer-contact-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.footer-address-wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+}
