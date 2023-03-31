@@ -1,8 +1,13 @@
 <?php get_header(); ?>
 <section class="contact">
-    <h2>Contact us</h2>
-    <p>Contact us regarding potenial collaborations or about requests to use any of our photographs.</p>
+    <h2>
+        <?=get_the_title()?>
+    </h2>
+    <p>
+        <?=the_content()?>
+    </p>
 </section>
+
 <section class="contact-form-section">
     <form action="" method="get" enctype="text/plain">
         <div>
