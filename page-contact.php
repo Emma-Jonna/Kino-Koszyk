@@ -1,13 +1,13 @@
 <?php get_header(); ?>
 <section class="contact">
     <h2>
-        <?=get_the_title()?>
+        <?= get_the_title() ?>
     </h2>
     <p>
-        <?=the_content()?>
+        <?= the_content() ?>
     </p>
-    
-    <form action="contact-handler.php" method="post" enctype="text/plain" class="contact-form">
+
+    <form action="contact-handler.php" method="post" enctype="text/plain" class="contact__contact_form">
         <div>
             <label for="name">Name</label>
             <input type="text" name="name">
