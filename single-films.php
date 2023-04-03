@@ -34,9 +34,19 @@ $latest_posts_query = new WP_Query($args);
                 </div>
             <?php endwhile; ?>
             <div class="post-navigation">
+
+                <!-- post navigation -->
                 <?php next_post_link('%link', __('<')); ?>
                 <?php previous_post_link('%link', __('>')); ?>
-                <iframe width="560" height="315" src=<?php echo get_field("video"); ?> title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
+                <?php
+                if (get_field('video')) {
+                ?>
+                    <iframe width="560" height="315" src=<?php echo get_field("video"); ?> title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                <?php
+                }
+                ?>
+
                 <!-- <video controls muted autoplay src=""></video> -->
                 <?php get_template_part("parts/shared/post", "images"); ?>
             </article>
