@@ -28,7 +28,7 @@ add_action("init", function () {
         "public" => true,
         "has_archive" => false,
         'rewrite' => array('slug' => 'films'),
-        "menu_icon" => "ph:film-reel-bold",
+        "menu_icon" => "dashicons-thumbs-down",
     ));
     register_post_type("photos", array(
         "labels" => array(
@@ -48,6 +48,17 @@ add_action("init", function () {
         "public" => true,
         "has_archive" => false,
         'rewrite' => array('slug' => 'books'),
+        "menu_icon" => "dashicons-thumbs-down",
+
+    ));
+    register_post_type("news", array(
+        "labels" => array(
+            "name" => __("News"),
+            "singular_name" => __("News"),
+        ),
+        "public" => true,
+        "has_archive" => false,
+        'rewrite' => array('slug' => 'news'),
         "menu_icon" => "dashicons-thumbs-down",
 
     ));
