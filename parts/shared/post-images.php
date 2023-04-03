@@ -16,8 +16,6 @@ if ($fields) {
 ?>
             <img src="<?php echo $fields[$imageNr]['url'] ?>" alt="">
 <?php
-        } else {
-            echo "hello";
         }
     }
 }
