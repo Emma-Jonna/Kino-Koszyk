@@ -17,18 +17,17 @@ html {
   font-size: 16px;
 }
 
+main {
+  width: 100%;
+  gap: 5rem;
+  padding: 5rem 0;
+  display: flex;
+  flex-direction: column;
+}
+
 section {
   margin-left: 18rem;
-  padding: 5rem;
-}
-
-.photo,
-.about {
-  margin-left: 200px;
-}
-
-.about {
-  margin-left: 300px;
+  padding: 0 5rem;
 }
 
 .portrait {

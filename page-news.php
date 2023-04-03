@@ -10,7 +10,7 @@ $latest_posts_query = new WP_Query($args);
 ?>
 <section class="news">
     <div class="news__top_container">
-        <a class="news_single__header-redirect" href="/">
+        <a class="news_single__header-redirect" href="<?= home_url() ?>">
             Back </a>
         <h2 class="news__top_container-title">
             <?= the_title(); ?>
