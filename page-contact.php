@@ -9,7 +9,7 @@
 </section>
 
 <section class="contact-form-section">
-    <form action="" method="get" enctype="text/plain">
+    <form action="contact-handler.php" method="post" enctype="text/plain">
         <div>
             <label for="name">Name</label>
             <input type="text" name="name">
@@ -19,8 +19,8 @@
             <input type="email" name="email">
         </div>
         <div>
-            <label for="text-area">Message</label>
-            <textarea name="text-area" cols="30" rows="10" style="resize: none;"></textarea>
+            <label for="message">Message</label>
+            <textarea name="message" cols="30" rows="10" style="resize: none;"></textarea>
         </div>
         <button type="submit">Send message</button>
     </form>
