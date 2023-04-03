@@ -3,12 +3,16 @@
 
 
 add_action("init", function () {
-    $array = ["books", "photos", "news", "films"];
+    $array = ["books", "photos", "films"];
     foreach ($array as $key) {
         add_theme_support('title-tag');
         add_theme_support('post-thumbnails');
         add_post_type_support($key, 'thumbnail');
     }
+});
+
+add_action("init", function () {
+    add_theme_support('title-tag');
 });
 
 
@@ -55,6 +59,7 @@ add_action("init", function () {
         "menu_icon" => "dashicons-book",
 
     ));
+    // _____ News _____
     register_post_type("news", array(
         "labels" => array(
             "name" => __("News"),
