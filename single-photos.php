@@ -31,6 +31,7 @@ $latest_posts_query = new WP_Query($args);
                         <!-- the page content here -->
                         <?php the_content(); ?>
                     </div>
+                    <?php get_template_part("parts/shared/post", "images"); ?>
                 </div>
             <?php endwhile; ?>
             <div class="photo_single__post_navigation">
