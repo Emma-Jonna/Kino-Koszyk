@@ -9,14 +9,17 @@ Version: 1.0
 
 * {
   box-sizing: border-box;
-}
-
-body {
+  padding: 0;
   margin: 0;
 }
 
+html {
+  font-size: 16px;
+}
+
 section {
-  padding-left: 350px;
+  margin-left: 18rem;
+  padding: 5rem;
 }
 
 .photo {

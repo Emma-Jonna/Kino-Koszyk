@@ -1,0 +1,21 @@
+/* section.books-single,
+section.films-single,
+section.photos-single {
+}
+
+
+
+.books-single .img-wrapper img,
+.films-single .img-wrapper img,
+.photos-single .img-wrapper img {
+
+} */
+/* 
+.books-thumbnail {
+    object-position: center;
+    object-fit: cover;
+}
+
+.books-single .content-wrapper {
+    background-color: red;
+} */
