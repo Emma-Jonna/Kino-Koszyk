@@ -8,11 +8,11 @@ $args = array(
 $latest_posts_query = new WP_Query($args);
 ?>
 <section class="photos">
-    <div class="top-container">
-        <h2>
+    <div class="photos__gallery_wrapper">
+        <h2 class="photos__gallery_wrapper-title">
             <?= the_title(); ?>
         </h2>
-        <p>
+        <p class="photos__gallery_wrapper-content">
             <?= the_content(); ?>
         </p>
         <div>
@@ -20,9 +20,9 @@ $latest_posts_query = new WP_Query($args);
             <!-- <?php the_post_thumbnail('medium_large', array('class' => 'photos-thumbnail')); ?> -->
         </div>
     </div>
-    <div class="gallery">
+    <div class="photos__gallery">
         <?php if (have_posts()) : ?>
-            <div class="gallery-wrapper">
+            <div class="photos__gallery_wrapper">
                 <?php while ($latest_posts_query->have_posts()) :               $latest_posts_query->the_post();
                     get_template_part("parts/shared/post", "photos"); ?>
                 <?php endwhile; ?>

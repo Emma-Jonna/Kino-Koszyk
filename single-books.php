@@ -12,28 +12,28 @@ $latest_posts_query = new WP_Query($args);
 
 ?>
 <!-- <?php print_a($post) ?> -->
-<section class="books-single">
+<section class="books_single">
     <?php if ($latest_posts_query->have_posts()) : ?>
         <?php while (have_posts()) : the_post(); ?>
             <article>
-                <div>
+                <div class="books_single__header">
                     <!-- Insert BACK navigation here inside a tag. Remove hard coded href -->
-                    <a href="<?= $redirectToPostType ?>">
+                    <a class="books_single__header-redirect" href="<?= $redirectToPostType ?>">
                         < </a>
-                            <h2><?php the_title(); ?></h2>
+                            <h2 class="books_single__header-title"><?php the_title(); ?></h2>
                 </div>
-                <div class="content-wrapper">
-                    <div class="img-wrapper">
+                <div class="books_single__content_wrapper">
+                    <div class="books_single__content_wrapper-img_wrapper">
                         <!-- featured image of the page -->
                         <?php the_post_thumbnail('medium_large', array('class' => 'books-thumbnail')); ?>
                     </div>
-                    <div>
+                    <div class="books_single__content_wrapper-content">
                         <!-- the page content here -->
                         <?php the_content(); ?>
                     </div>
                 </div>
             <?php endwhile; ?>
-            <div class="post-navigation">
+            <div class="books_single__post_navigation">
                 <?php next_post_link('%link', __('<')); ?>
                 <?php previous_post_link('%link', __('>')); ?>
             </div>
