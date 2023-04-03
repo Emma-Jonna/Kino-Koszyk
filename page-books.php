@@ -8,7 +8,7 @@ $args = array(
 $latest_posts_query = new WP_Query($args);
 ?>
 <section class="books">
-    <div>
+    <div class="top-container">
         <h2>
             <?= the_title(); ?>
         </h2>
@@ -17,7 +17,7 @@ $latest_posts_query = new WP_Query($args);
         </p>
         <div>
             <!-- featured image of the page -->
-            <!-- <?php the_post_thumbnail('medium_large', array('class' => 'test-class')); ?> -->
+            <!-- <?php the_post_thumbnail('medium_large', array('class' => 'books-thumbnail')); ?> -->
         </div>
     </div>
     <div class="gallery">

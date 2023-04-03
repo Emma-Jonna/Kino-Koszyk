@@ -1,5 +1,5 @@
         <!-- This is a card in the grid -->
-        <div class="flex flex-col gap-6">
+        <div>
             <div>
                 <?php the_post_thumbnail('large', array('class' => 'object-cover w-full h-full')); ?>
                 <date><?= get_the_date(); ?></date>
