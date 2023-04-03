@@ -36,7 +36,9 @@ $latest_posts_query = new WP_Query($args);
             <div class="post-navigation">
                 <?php next_post_link('%link', __('<')); ?>
                 <?php previous_post_link('%link', __('>')); ?>
-            </div>
+                <iframe width="560" height="315" src=<?php echo get_field("video"); ?> title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                <!-- <video controls muted autoplay src=""></video> -->
+                <?php get_template_part("parts/shared/post", "images"); ?>
             </article>
         <?php endif; ?>
 </section>

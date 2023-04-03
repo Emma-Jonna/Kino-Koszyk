@@ -55,6 +55,17 @@ add_action("init", function () {
         "menu_icon" => "dashicons-book",
 
     ));
+    register_post_type("news", array(
+        "labels" => array(
+            "name" => __("News"),
+            "singular_name" => __("News"),
+        ),
+        "public" => true,
+        "has_archive" => false,
+        'rewrite' => array('slug' => 'news'),
+        "menu_icon" => "dashicons-thumbs-down",
+
+    ));
 });
 
 function print_a($data)

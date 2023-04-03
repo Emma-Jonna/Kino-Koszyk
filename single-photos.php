@@ -26,6 +26,7 @@ $latest_posts_query = new WP_Query($args);
                     <div class="img-wrapper">
                         <!-- featured image of the page -->
                         <?php the_post_thumbnail('medium_large', array('class' => 'photos-thumbnail')); ?>
+                        <?php get_template_part("parts/shared/post", "gallery"); ?>
                     </div>
                     <div>
                         <!-- the page content here -->
@@ -40,4 +41,5 @@ $latest_posts_query = new WP_Query($args);
             </article>
         <?php endif; ?>
 </section>
+
 <?php get_footer(); ?>
