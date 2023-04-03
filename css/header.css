@@ -1,71 +1,67 @@
-  header {
-    width: 18rem;
-    height: 100%;
-    padding: 3.75rem 2rem 0 2rem;
-    background-color: #1F1D19;
+header {
+  width: 18rem;
+  height: 100%;
+  /* padding: 3.75rem 2rem 0 2rem; */
+  background-color: #1f1d19;
 
-    display: flex;
-    flex-direction: column;
-    justify-content: start;
-    align-items: center;
-    position: fixed;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: center;
+  position: fixed;
 
-    
-    font-family: 'Montserrat';
-  }
+  font-family: "Montserrat";
+}
 
-  nav {
-    display: flex;
-    flex-direction: column;
-    gap: 5rem;
-  }
-  nav div {
-    display: flex;
-    flex-direction: column;
-    gap: 1rem;
-  }
+nav {
+  display: flex;
+  flex-direction: column;
+  gap: 5rem;
+}
+nav div {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
 
-  nav div img {
-    width: 10.813rem;
-  }
+nav div img {
+  width: 10.813rem;
+}
 
-  nav div h1 {
-    font-weight: 400;
-    font-size: 1.5rem;
-    line-height: 30px;
-    color: white;
-  }
+nav div h1 {
+  font-weight: 400;
+  font-size: 1.5rem;
+  line-height: 30px;
+  color: white;
+}
 
-  nav ul {
-    display: flex;
-    flex-direction: column;
-    list-style: none;
-    gap: 1.75rem;
-  }
-  
-  nav a {
-    text-decoration: none;
-    color: white;
-    /* width: 10rem; */
+nav ul {
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+  gap: 1.75rem;
+}
 
-    font-size: 1.125rem;
-    font-weight: 400;
-    line-height: 1.875rem;
-    letter-spacing: 0.03em;
-    text-align: left;
-  }
+nav a {
+  text-decoration: none;
+  color: white;
+  /* width: 10rem; */
 
-  nav li:last-of-type {
-    width: 10.2rem;
-    margin-top: 3.25rem;
-    padding: 1.25rem;
-    border: solid white 1px;
-  }
+  font-size: 1.125rem;
+  font-weight: 400;
+  line-height: 1.875rem;
+  letter-spacing: 0.03em;
+  text-align: left;
+}
 
-  nav a:hover {
-    font-weight: 700;
-    letter-spacing: 0em;
-  }
+nav li:last-of-type {
+  width: 10.2rem;
+  margin-top: 3.25rem;
+  padding: 1.25rem;
+  border: solid white 1px;
+}
 
-  
-
+nav a:hover {
+  font-weight: 700;
+  letter-spacing: 0em;
+}

@@ -22,6 +22,26 @@ section {
   padding: 5rem;
 }
 
-.photo {
+.photo,
+.about {
   margin-left: 200px;
+}
+
+.about {
+  margin-left: 300px;
+}
+
+.portrait {
+  width: 471px;
+  height: 454px;
+}
+
+.portrait img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+li {
+  list-style: none;
 }
