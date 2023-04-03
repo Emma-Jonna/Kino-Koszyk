@@ -6,10 +6,8 @@
     <p>
         <?=the_content()?>
     </p>
-</section>
-
-<section class="contact-form-section">
-    <form action="contact-handler.php" method="post" enctype="text/plain">
+    
+    <form action="contact-handler.php" method="post" enctype="text/plain" class="contact-form">
         <div>
             <label for="name">Name</label>
             <input type="text" name="name">
@@ -25,4 +23,5 @@
         <button type="submit">Send message</button>
     </form>
 </section>
+
 <?php get_footer(); ?>
