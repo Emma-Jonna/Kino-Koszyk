@@ -18,16 +18,19 @@ html {
 }
 
 main {
-  width: 100%;
+  margin-left: 18rem;
   gap: 5rem;
-  padding: 5rem 0;
   display: flex;
   flex-direction: column;
 }
 
 section {
-  margin-left: 18rem;
+  width: 100%;
+}
+
+section:not(.home) {
   padding: 0 5rem;
+  padding-top: 5rem;
 }
 
 .portrait {
