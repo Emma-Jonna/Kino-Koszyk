@@ -42,7 +42,7 @@ nav ul {
   gap: 1.75rem;
 }
 
-nav a {
+nav a:not(.logo) {
   text-decoration: none;
   color: white;
   /* width: 10rem; */
@@ -54,6 +54,10 @@ nav a {
   text-align: left;
 }
 
+.logo {
+  text-decoration: none;
+}
+
 nav li:last-of-type {
   width: 10.2rem;
   margin-top: 3.25rem;
@@ -61,7 +65,7 @@ nav li:last-of-type {
   border: solid white 1px;
 }
 
-nav a:hover {
+nav a:hover:not(.logo) {
   font-weight: 700;
   letter-spacing: 0em;
 }
