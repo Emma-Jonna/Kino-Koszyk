@@ -22,6 +22,7 @@ $latest_posts_query = new WP_Query($args);
                 <?php while ($getHeroImages->have_posts()) :               $getHeroImages->the_post();
                     get_template_part("parts/shared/post", "hero"); ?>
                 <?php endwhile; ?>
+                <?php get_template_part("parts/shared/post", "slideshow"); ?>
             </div>
         <?php endif; ?>
     </div>
