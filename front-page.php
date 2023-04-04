@@ -19,10 +19,15 @@ $latest_posts_query = new WP_Query($args);
     <div class="home__hero">
         <?php if (have_posts()) : ?>
             <div class="hero__hero-carousel">
-                <?php while ($getHeroImages->have_posts()) :               $getHeroImages->the_post();
-                    get_template_part("parts/shared/post", "hero"); ?>
-                <?php endwhile; ?>
-                <?php get_template_part("parts/shared/post", "slideshow"); ?>
+                <div class="slideshow-section">
+                    <div class="slideshow-wrapper">
+                        <?php while ($getHeroImages->have_posts()) :               $getHeroImages->the_post();
+                            get_template_part("parts/shared/post", "hero");
+                        ?>
+                        <?php endwhile; ?>
+                        <!-- <?php get_template_part("parts/shared/post", "slideshow"); ?> -->
+                    </div>
+                </div>
             </div>
         <?php endif; ?>
     </div>
