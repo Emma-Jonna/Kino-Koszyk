@@ -25,8 +25,8 @@ $latest_posts_query = new WP_Query($args);
                 <div class="news_single__content_wrapper">
                     <div class="news_single__content_wrapper-img_wrapper">
                         <!-- featured image of the page -->
-                        <!-- <?php the_post_thumbnail('medium_large', array('class' => 'news-thumbnail')); ?> -->
-                        <?php get_template_part("parts/shared/post", "news"); ?>
+                        <?php the_post_thumbnail('medium_large', array('class' => 'news-thumbnail')); ?>
+                        <!-- <?php get_template_part("parts/shared/post", "news"); ?> -->
                     </div>
                     <div class="news_single__content_wrapper-content">
                         <!-- the page content here -->
