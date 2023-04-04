@@ -12,6 +12,7 @@
     <link rel="stylesheet" href="<?= get_template_directory_uri() ?>/style.css">
     <link rel="stylesheet" href="<?= get_template_directory_uri() ?>/css/header.css">
     <link rel="stylesheet" href="<?= get_template_directory_uri() ?>/css/single.css">
+    <link rel="stylesheet" href="<?= get_template_directory_uri() ?>/css/global.css">
     <?php wp_head(); ?>
 </head>
 
@@ -20,7 +21,7 @@
     <header>
         <nav>
             <div>
-                <img src="<?= get_template_directory_uri() ?>/assets/Kino-Koszyk-logo.svg" alt="Logo">
+                <img src=" <?= get_template_directory_uri() ?>/assets/Kino-Koszyk-logo.svg" alt="Logo">
                 <h1>KINO KOSZYK</h1>
             </div>
             <ul>

@@ -1,0 +1,88 @@
+* {
+  margin: 0;
+  box-sizing: border-box;
+  padding: 0;
+}
+
+:root {
+  --color-warm-black: #1f1d19;
+  --color-warm-white: #fbf9f4;
+  --color-grey-300: #d0d0d0;
+  --color-grey-400: #c0c0c0;
+  --color-grey-500: #969696;
+  --color-grey-600: #676767;
+  --color-grey-700: #3c3c3c;
+}
+
+.slideshow-section {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.slideshow-wrapper {
+  position: relative;
+  background-color: #d9d9d9;
+  width: 100%;
+  aspect-ratio: 4/2;
+}
+
+.slideshowItem {
+  position: absolute;
+  top: 0;
+  display: none;
+  width: 100%;
+}
+
+.slideshowItem img {
+  aspect-ratio: 4/2;
+  width: 100%;
+}
+
+.slideshowItem:nth-child(1) img {
+  background-color: red;
+}
+
+.slideshowItem:nth-child(2) img {
+  background-color: blue;
+}
+
+.slideshowItem:nth-child(3) img {
+  background-color: green;
+}
+
+@keyframes slideshowFade {
+  from {
+    opacity: 0.5;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+.slideshowFade {
+  animation-name: fadeIn;
+  animation-duration: 500ms;
+}
+
+.circle-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.circle {
+  width: 10px;
+  height: 10px;
+  border-radius: 100%;
+  background-color: #d9d9d9;
+  margin: 24px 3.5px 24px 3.5px;
+  font-weight: normal;
+  transition: background-color 2000ms ease;
+}
+
+.activeCircle {
+  background-color: black;
+}

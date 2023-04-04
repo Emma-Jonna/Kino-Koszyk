@@ -23,7 +23,7 @@ $latest_posts_query = new WP_Query($args);
 
     <?php if (have_posts()) : ?>
         <div class="news_gallery__wrapper">
-            <?php while ($latest_posts_query->have_posts()) :               $latest_posts_query->the_post();
+            <?php while ($latest_posts_query->have_posts()) : $latest_posts_query->the_post();
                 get_template_part("parts/shared/post", "news");
             ?>
             <?php endwhile; ?>
