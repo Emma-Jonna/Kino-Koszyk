@@ -12,7 +12,7 @@ add_action("init", function () {
 });
 
 add_action("init", function () {
-    add_theme_support('title-tag');
+    add_theme_support('news', 'title-tag');
 });
 
 
