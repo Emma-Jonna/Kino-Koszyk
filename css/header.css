@@ -1,11 +1,8 @@
 header {
-  /* width: 18rem; */
+  width: 18rem;
   height: 100%;
   /* padding: 3.75rem 2rem 0 2rem; */
-<<<<<<< Updated upstream
-=======
   padding: 3.75rem 3.75rem 0 3.75rem;
->>>>>>> Stashed changes
   background-color: #1f1d19;
 
   display: flex;
@@ -16,7 +13,7 @@ header {
 
   font-family: "Montserrat";
   /* FOR DEV USE TO SHOW "print_a" */
-  overflow: scroll;
+  /* overflow: scroll; */
 }
 
 nav {

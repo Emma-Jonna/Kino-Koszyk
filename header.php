@@ -13,11 +13,8 @@
     <link rel="stylesheet" href="<?= get_template_directory_uri() ?>/style.css">
     <link rel="stylesheet" href="<?= get_template_directory_uri() ?>/css/header.css">
     <link rel="stylesheet" href="<?= get_template_directory_uri() ?>/css/single.css">
-<<<<<<< Updated upstream
     <link rel="stylesheet" href="<?= get_template_directory_uri() ?>/css/global.css">
-=======
     <link rel="stylesheet" href="<?= get_template_directory_uri() ?>/css/joanna.css">
->>>>>>> Stashed changes
     <?php wp_head(); ?>
 </head>
 
@@ -26,15 +23,10 @@
     <header>
         <nav>
             <div>
-<<<<<<< Updated upstream
-                <img src=" <?= get_template_directory_uri() ?>/assets/Kino-Koszyk-logo.svg" alt="Logo">
-                <h1>KINO KOSZYK</h1>
-=======
                 <a class="logo" href="<?= home_url() ?>">
                     <img src="<?= get_template_directory_uri() ?>/assets/Kino-Koszyk-logo.svg" alt="Logo">
                     <h1>KINO KOSZYK</h1>
                 </a>
->>>>>>> Stashed changes
             </div>
             <ul>
                 <?php
