@@ -1,29 +1,33 @@
 <?php get_header(); ?>
 <section class="joanna">
+
     <h2 class="joanna__title">
         <?php the_title() ?>
     </h2>
-    <div class="joanna__top_container">
+
+    <article class="joanna__top_container">
 
         <div class="joanna__top_container-left">
             <div class="joanna__top_container-thumbnail">
                 <?php the_post_thumbnail('', array('class' => 'joanna__top_container-thumbnail_img')) ?>
             </div>
-            <p class="joanna__top_container-quote"><?php the_field("quote"); ?></p>
+            <p class="joanna__top_container-quote">
+                <?php the_field("quote"); ?>
+            </p>
             <span>
                 <p><?php the_title(); ?></p>
                 <p><?php the_field("quote_source"); ?></p>
             </span>
         </div>
+
         <div class="joanna__top_container-content joanna__top_container-right">
             <?php the_content(); ?>
         </div>
 
-    </div>
-
+    </article>
 </section>
 
-<section class="joanna_links">
+<section class="joanna joanna_work">
     <h3>Work of Joanna Helander</h3>
     <div>
         <button>Photos</button>
@@ -32,7 +36,7 @@
     </div>
 </section>
 
-<section class="joanna_bio">
+<section class="joanna joanna_bio">
     <h4 class="joanna_bio__title">Biography</h4>
     <article class="joanna_bio__article article_1">
         <p><?php the_field("biography_part_1"); ?></p>

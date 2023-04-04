@@ -8,27 +8,32 @@ $args = array(
 $latest_posts_query = new WP_Query($args);
 ?>
 <section class="films">
-    <div class="films__top_container">
-        <h2 class="films__top_container-title">
-            <?= the_title(); ?>
-        </h2>
+
+    <h2 class="films__title">
+        <?= the_title(); ?>
+    </h2>
+
+    <article class="films__top_container">
         <p class="films__top_container-content">
             <?= the_content(); ?>
         </p>
         <div>
-            <!-- featured image of the page -->
-            <!-- <?php the_post_thumbnail('medium_large', array('class' => 'films-thumbnail')); ?> -->
+            <!-- DROP DOWN HERE -->
         </div>
-    </div>
-    <div class="films__gallery">
-        <?php if (have_posts()) : ?>
-            <div class="films__gallery_wrapper">
-                <?php while ($latest_posts_query->have_posts()) :               $latest_posts_query->the_post();
-                    get_template_part("parts/shared/post", "films"); ?>
-                <?php endwhile; ?>
-            </div>
-        <?php endif; ?>
-    </div>
+    </article>
+
+</section>
+
+<section class="films films_gallery">
+
+    <?php if (have_posts()) : ?>
+        <div class="films_gallery__wrapper">
+            <?php while ($latest_posts_query->have_posts()) :               $latest_posts_query->the_post();
+                get_template_part("parts/shared/post", "films"); ?>
+            <?php endwhile; ?>
+        </div>
+    <?php endif; ?>
+
 </section>
 
 <?php get_footer(); ?>

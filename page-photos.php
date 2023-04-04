@@ -8,27 +8,32 @@ $args = array(
 $latest_posts_query = new WP_Query($args);
 ?>
 <section class="photos">
-    <div class="photos__gallery_wrapper">
-        <h2 class="photos__gallery_wrapper-title">
-            <?= the_title(); ?>
-        </h2>
-        <p class="photos__gallery_wrapper-content">
+
+    <h2 class="photos__title">
+        <?= the_title(); ?>
+    </h2>
+
+    <article class="photos__top_container">
+        <p class="photos__top_container-content">
             <?= the_content(); ?>
         </p>
         <div>
-            <!-- featured image of the page -->
-            <!-- <?php the_post_thumbnail('medium_large', array('class' => 'photos-thumbnail')); ?> -->
+            <!-- DROP DOWN HERE -->
         </div>
-    </div>
-    <div class="photos__gallery">
-        <?php if (have_posts()) : ?>
-            <div class="photos__gallery_wrapper">
-                <?php while ($latest_posts_query->have_posts()) :               $latest_posts_query->the_post();
-                    get_template_part("parts/shared/post", "photos"); ?>
-                <?php endwhile; ?>
-            </div>
-        <?php endif; ?>
-    </div>
+    </article>
+
+</section>
+
+<section class="photos photos_gallery">
+
+    <?php if (have_posts()) : ?>
+        <div class="photos_gallery__wrapper">
+            <?php while ($latest_posts_query->have_posts()) :               $latest_posts_query->the_post();
+                get_template_part("parts/shared/post", "photos"); ?>
+            <?php endwhile; ?>
+        </div>
+    <?php endif; ?>
+
 </section>
 
 <?php get_footer(); ?>

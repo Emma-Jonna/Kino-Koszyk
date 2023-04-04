@@ -1,32 +1,48 @@
 <?php get_header(); ?>
 <section class="about">
 
-    <h2><?php echo the_title(); ?></h2>
-    <p><?php echo the_content(); ?></p>
+    <h2 class="about__title"><?php echo the_title(); ?></h2>
+    <article class="about__content">
+        <p><?php echo the_content(); ?></p>
+    </article>
 
-    <article>
-        <h3><?php echo "Bo Persson"; ?></h3>
-        <p><?php echo the_field('about_bo_persson'); ?></p>
-        <ul>
-            <li><?php echo the_field('bo_email'); ?></li>
-            <li><?php echo the_field('bo_phone'); ?></li>
-        </ul>
-        <div class="portrait">
+    <article class="about__content_bo">
+        <div class="about__content_bo content">
+            <h3 class="about__content_bo content_title">
+                <?php echo "Bo Persson"; ?>
+            </h3>
+            <p class="about__content_bo content_about">
+                <?php echo the_field('about_bo_persson'); ?>
+            </p>
+            <ul>
+                <li><?php echo the_field('bo_email'); ?></li>
+                <li><?php echo the_field('bo_phone'); ?></li>
+            </ul>
+        </div>
+
+        <div class="about__content_bo portrait">
             <img src=<?php the_field('bo_photo'); ?> alt="">
         </div>
     </article>
 
-    <article>
-        <div class="portrait">
+    <article class="about__content_joanna">
+        <div class="about__content_joanna portrait">
             <img src=<?php the_field('joanna_photo'); ?> alt="">
         </div>
-        <h3><?php echo "Joanna Helander"; ?></h3>
-        <p><?php echo the_field('about_joanna_helander'); ?></p>
-        <ul>
-            <li><?php echo the_field('joanna_email'); ?></li>
-            <li><?php echo the_field('joanna_phone'); ?></li>
-        </ul>
+        <div class="about__content_joanna content">
+            <h3 class="about__content_joanna content_title">
+                <?php echo "Joanna Helander"; ?>
+            </h3>
+            <p class="about__content_joanna content_about">
+                <?php echo the_field('about_joanna_helander'); ?>
+            </p>
+            <ul>
+                <li><?php echo the_field('joanna_email'); ?></li>
+                <li><?php echo the_field('joanna_phone'); ?></li>
+            </ul>
+        </div>
 
     </article>
 </section>
+
 <?php get_footer(); ?>
