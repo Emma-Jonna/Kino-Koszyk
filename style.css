@@ -28,9 +28,12 @@ section {
   width: 100%;
 }
 
+section:first-of-type:not(.home) {
+  padding-top: 5rem;
+}
+
 section:not(.home) {
   padding: 0 5rem;
-  padding-top: 5rem;
 }
 
 .portrait {
