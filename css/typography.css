@@ -1,0 +1,225 @@
+/* Desktop light */
+.p-light {
+    font-size: 1.125rem;
+    line-height: 1.625rem;
+    font-weight: 300;
+}
+
+/* Desktop regular */
+.h1-regular {
+    font-size: 4.25rem;
+    line-height: 4.75rem;
+    font-weight: normal;
+}
+
+.h2-regular {
+    font-size: 3rem;
+    line-height: 3.5rem;
+    font-weight: normal;
+}
+
+.h3-regular {
+    font-size: 2rem;
+    line-height: 2.45rem;
+    font-weight: normal;
+}
+
+.h4-regular {
+    font-size: 1.5rem;
+    line-height: 1.5rem;
+    font-weight: normal;
+}
+
+.p-regular {
+    font-size: 1.125rem;
+    line-height: 1.625rem;
+    font-weight: normal;
+}
+
+.link-regular {
+    font-size: 1.5rem;
+    line-height: 1.875rem;  
+    font-weight: normal;
+}
+
+/* Desktop semibold */
+.h2-semibold {
+    font-size: 3rem;
+    line-height: 3.5rem;
+    font-weight: 600;
+}
+
+.h3-semibold {
+    font-size: 2rem;
+    line-height: 2.45rem;
+    font-weight: 600;
+}
+
+.h4-semibold {
+    font-size: 1.5rem;
+    line-height: 1.5rem;
+    font-weight: 600;
+}
+
+.p-semibold {
+    font-size: 1.125rem;
+    line-height: 1.625rem;
+    font-weight: 600;
+}
+
+.link-semibold {
+    font-size: 1.5rem;
+    line-height: 1.875rem;  
+    font-weight: 600;
+}
+
+/* Desktop bold */
+.h1-bold {
+    font-size: 4.25rem;
+    line-height: 4.75rem;
+    font-weight: bold;
+}
+
+.h2-bold {
+    font-size: 3rem;
+    line-height: 3.5rem;
+    font-weight: bold;
+}
+
+.h3-bold {
+    font-size: 2rem;
+    line-height: 2.45rem;
+    font-weight: bold;
+}
+
+.h4-bold {
+    font-size: 1.5rem;
+    line-height: 1.5rem;
+    font-weight: bold;
+}
+
+.p-bold {
+    font-size: 1.125rem;
+    line-height: 1.625rem;
+    font-weight: bold;
+}
+
+.link-bold {
+    font-size: 1.5rem;
+    line-height: 1.875rem;  
+    font-weight: bold;
+}
+/* End dekstop styles */
+
+/* Mobile light */
+.p-light-mobile {
+    font-size: 1rem;
+    line-height: 1.62rem;
+    font-weight: 300;
+}
+
+/* Mobile regular */
+.h1-regular-mobile {
+    font-size: 2.5rem;
+    line-height: 4.75rem;
+    font-weight: normal;
+}
+
+.h2-regular-mobile {
+    font-size: 2rem;
+    line-height: 3.5rem;
+    font-weight: normal;
+}
+
+.h3-regular-mobile {
+    font-size: 1.5rem;
+    line-height: 2.45rem;
+    font-weight: normal;
+}
+
+.h4-regular-mobile {
+    font-size: 1.25rem;
+    line-height: 1.5rem;
+    font-weight: normal;
+}
+
+.p-regular-mobile {
+    font-size: 1rem;
+    line-height: 1.62rem;
+    font-weight: normal;
+}
+
+.link-regular-mobile {
+    font-size: 1.25rem;
+    line-height: 1.875rem;
+    font-weight: normal;
+}
+
+/* Mobile semibold */
+.h2-semibold-mobile {
+    font-size: 2rem;
+    line-height: 3.5rem;
+    font-weight: 600;
+}
+
+.h3-semibold-mobile {
+    font-size: 1.5rem;
+    line-height: 2.45rem;
+    font-weight: 600;
+}
+
+.h4-semibold-mobile {
+    font-size: 1.25rem;
+    line-height: 1.5rem;
+    font-weight: 600;
+}
+
+.p-semibold-mobile {
+    font-size: 1rem;
+    line-height: 1.62rem;
+    font-weight: 600;
+}
+
+.link-semibold-mobile {
+    font-size: 1.25rem;
+    line-height: 1.875rem;
+    font-weight: 600;
+}
+
+/* Mobile bold */
+.h1-bold-mobile {
+    font-size: 2.5rem;
+    line-height: 4.75rem;
+    font-weight: bold;
+}
+
+.h2-bold-mobile {
+    font-size: 2rem;
+    line-height: 3.5rem;
+    font-weight: bold;
+}
+
+.h3-bold-mobile {
+    font-size: 1.5rem;
+    line-height: 2.45rem;
+    font-weight: bold;
+}
+
+.h4-bold-mobile {
+    font-size: 1.25rem;
+    line-height: 1.5rem;
+    font-weight: bold;
+}
+
+.p-bold-mobile {
+    font-size: 1rem;
+    line-height: 1.62rem;
+    font-weight: bold;
+}
+
+.link-bold-mobile {
+    font-size: 1.25rem;
+    line-height: 1.875rem;
+    font-weight: bold;
+}
+/* End mobile styles */
