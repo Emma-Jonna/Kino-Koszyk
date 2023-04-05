@@ -15,6 +15,7 @@
     <link rel="stylesheet" href="<?= get_template_directory_uri() ?>/css/single.css">
     <link rel="stylesheet" href="<?= get_template_directory_uri() ?>/css/global.css">
     <link rel="stylesheet" href="<?= get_template_directory_uri() ?>/css/joanna.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat">
     <?php wp_head(); ?>
 </head>
 
