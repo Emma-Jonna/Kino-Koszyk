@@ -8,9 +8,9 @@
     margin-left: 20vw;
     margin-bottom: 0;
     list-style-type: none;
-    color: white;
     font-family: "Montserrat";
     padding: 1rem;
+    color: var(--color-warm-white);
 }
 
 .footer-contact-wrapper {
@@ -23,4 +23,44 @@
     display: flex;
     flex-direction: row;
     justify-content: end;
+    padding-top: 2rem;
+    padding-right: 2rem;
 }
+
+.footer-address-image {
+    padding-left: 1rem;
+    width: 371px;
+}
+
+.footer-address-wrapper li:first-child {
+    font-size: 2rem;
+    line-height: 2.45rem;
+    font-weight: normal;
+    padding-bottom: 0.5rem;
+}
+
+.footer-address-text li {
+    display: flex;
+    flex-flow: column nowrap;
+    padding-bottom: 0.25rem;
+}
+
+.footer-address-wrapper li:last-child {
+    font-size: 1rem;
+    line-height: 1.625rem;
+    font-weight: 300;
+    margin-top: auto;
+    padding-bottom: 0;
+}
+
+.footer-address-wrapper li:nth-of-type(3) {
+    padding-bottom: 2.43rem;
+}
+
+.footer-address-text {
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
