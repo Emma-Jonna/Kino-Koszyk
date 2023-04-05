@@ -40,21 +40,9 @@
   width: 100%;
 }
 
-.slideshowItem:nth-child(1) img {
-  background-color: red;
-}
-
-.slideshowItem:nth-child(2) img {
-  background-color: blue;
-}
-
-.slideshowItem:nth-child(3) img {
-  background-color: green;
-}
-
 @keyframes slideshowFade {
   from {
-    opacity: 0.5;
+    opacity: 0;
   }
 
   to {
@@ -63,8 +51,8 @@
 }
 
 .slideshowFade {
-  animation-name: fadeIn;
-  animation-duration: 500ms;
+  animation-name: slideshowFade;
+  animation-duration: 1s;
 }
 
 .circle-container {

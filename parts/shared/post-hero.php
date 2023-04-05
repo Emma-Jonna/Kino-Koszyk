@@ -7,9 +7,6 @@ if ($fields) {
 
         if (isset($fields[$imageNr])) {
 ?>
-            <!-- <div class="hero_img_container">
-                <img class="<?= $imageNr ?>" src="<?php echo $fields[$imageNr]['url'] ?>" alt="">
-            </div> -->
             <div class="slideshowItem slideshowFade">
                 <img class="<?= $imageNr ?>" src="<?php echo $fields[$imageNr]['url'] ?>" alt="">
             </div>
