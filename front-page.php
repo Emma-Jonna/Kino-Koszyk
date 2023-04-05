@@ -18,12 +18,7 @@ $latest_posts_query = new WP_Query($args);
 <section class="home">
     <div class="home__hero">
         <?php if (have_posts()) : ?>
-            <div class="hero__hero-carousel">
-                <?php while ($getHeroImages->have_posts()) :               $getHeroImages->the_post();
-                    get_template_part("parts/shared/post", "hero"); ?>
-                <?php endwhile; ?>
-                <?php get_template_part("parts/shared/post", "slideshow"); ?>
-            </div>
+            <?php get_template_part("parts/shared/post", "slideshow"); ?>
         <?php endif; ?>
     </div>
 </section>
@@ -31,7 +26,7 @@ $latest_posts_query = new WP_Query($args);
     <a class="home_news-link" href="/news">News</a>
     <?php if (have_posts()) : ?>
         <!-- <div class="hero_news-wrapper"> -->
-        <?php while ($latest_posts_query->have_posts()) :               $latest_posts_query->the_post();
+        <?php while ($latest_posts_query->have_posts()) : $latest_posts_query->the_post();
             get_template_part("parts/shared/post", "news"); ?>
         <?php endwhile; ?>
         <!-- </div> -->

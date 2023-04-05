@@ -18,7 +18,8 @@ $latest_posts_query = new WP_Query($args);
             <article>
                 <div class="news_single__header">
                     <!-- Insert BACK navigation here inside a tag. Remove hard coded href -->
-                    <a class="news_single__header-redirect" href="<?= $redirectToPostType ?>">
+                    <!-- <a class="news_single__header-redirect" href="<?= $redirectToPostType ?>"> -->
+                    <a class="news_single__header-redirect" href="<?= home_url() ?>">
                         < Back </a>
                             <h2 class="news_single__header-title"><?php the_title(); ?></h2>
                 </div>
