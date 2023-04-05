@@ -17,9 +17,7 @@ $latest_posts_query = new WP_Query($args);
 <?php get_header() ?>
 <section class="home">
     <div class="home__hero">
-        <?php if (have_posts()) : ?>
-            <?php get_template_part("parts/shared/post", "slideshow"); ?>
-        <?php endif; ?>
+        <?php get_template_part("parts/shared/post", "slideshow"); ?>
     </div>
 </section>
 <section class="home_news">
