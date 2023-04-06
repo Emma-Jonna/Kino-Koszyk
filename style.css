@@ -55,8 +55,5 @@ li {
 
 a {
   text-decoration: none;
-}
-
-a:visited {
-  color: inherit;
+  color: var(--color-warm-black);
 }
