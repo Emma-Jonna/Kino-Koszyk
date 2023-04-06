@@ -10,7 +10,7 @@ if ($fields) : ?>
 
     <a class="news__cards_thumbnail" title="<?php the_title(); ?>" href="<?php the_permalink(); ?>">
 
-        <?php the_post_thumbnail('medium_large', array('class' => 'news__thumbnail-img')); ?>
+        <?php the_post_thumbnail('medium_large', array('class' => 'news__thumbnail-img', 'loading' => 'lazy')); ?>
         <div class="thumbnail_content">
             <?php the_title() ?>
             <?php the_content() ?>

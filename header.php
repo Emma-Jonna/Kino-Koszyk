@@ -16,6 +16,7 @@
     <link rel="stylesheet" href="<?= get_template_directory_uri() ?>/css/dropdown.css">
     <link rel="stylesheet" href="<?= get_template_directory_uri() ?>/css/global.css">
     <link rel="stylesheet" href="<?= get_template_directory_uri() ?>/css/joanna.css">
+    <link rel="stylesheet" href="<?= get_template_directory_uri() ?>/css/photos.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat">
     <?php wp_head(); ?>
 </head>
@@ -36,16 +37,16 @@
                 if ($nav_menu) foreach ($nav_menu as $item) : ?>
                     <li>
                         <?php if ($item->title != "Joanna Helander" && $item->post_title == $post->post_title) : ?>
-                            <a class="nav__list_item <?= $item->post_name ?>" title="<?= $item->title; ?>" href="<?= $item->url; ?>">
+                            <a class="nav__list_item nav__list_item_<?= $item->post_name ?>" title="<?= $item->title; ?>" href="<?= $item->url; ?>">
                                 <img class="nav__page_indicator" src="<?= get_template_directory_uri() ?>/assets/active-page-indicator.svg" alt="Active page indicator">
                                 <?= $item->title; ?>
                             </a>
                         <?php elseif ($item->post_name === "joanna-helander" && $post->post_title === "Joanna Helander") : ?>
-                            <a class="nav__list_item <?= $item->post_name ?> active" title="<?= $item->title; ?>" href="<?= $item->url; ?>">
+                            <a class="nav__list_item nav__list_item_<?= $item->post_name ?> active" title="<?= $item->title; ?>" href="<?= $item->url; ?>">
                                 <?= $item->title; ?>
                             </a>
                         <?php elseif ($item) : ?>
-                            <a class="nav__list_item <?= $item->post_name ?>" title="<?= $item->title; ?>" href="<?= $item->url; ?>">
+                            <a class="nav__list_item nav__list_item_<?= $item->post_name ?>" title="<?= $item->title; ?>" href="<?= $item->url; ?>">
                                 <?= $item->title; ?>
                             </a>
                         <?php endif; ?>
