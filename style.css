@@ -55,8 +55,17 @@ li {
 
 a {
   text-decoration: none;
+  color: var(--color-warm-black);
 }
 
 a:visited {
-  color: inherit;
+  color: var(--color-warm-black);
+}
+
+a:hover {
+  background-color: var(--color-grey-300);
+}
+
+a:active {
+  background-color: var(--color-grey-600);
 }

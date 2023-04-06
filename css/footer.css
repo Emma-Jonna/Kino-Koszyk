@@ -27,11 +27,22 @@
     line-height: 1.625rem;
     font-weight: normal;
     border: 2px solid var(--color-warm-black);
-    color: var(--color-warm-black);
-    padding: 1.25rem;
+    padding: 1.25rem; 
     margin-bottom: 4rem;
     cursor: pointer;
 } 
+
+.footer-contact-link:visited {
+    color: var(--color-warm-black);
+}
+
+.footer-contact-link:hover {
+    background-color: var(--color-grey-300);
+}
+
+.footer-contact-link:active {
+    background-color: var(--color-grey-600);
+}
 
 .footer-address-wrapper {
     display: flex;
