@@ -15,6 +15,7 @@ Version: 1.0
 
 html {
   font-size: 16px;
+  background: var(--color-warm-white);
 }
 
 main {
@@ -22,6 +23,7 @@ main {
   gap: 5rem;
   display: flex;
   flex-direction: column;
+  min-height: 80vh;
 }
 
 section {
@@ -49,4 +51,12 @@ section:not(.home) {
 
 li {
   list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:visited {
+  color: inherit;
 }

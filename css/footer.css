@@ -1,16 +1,10 @@
-* {
-    margin: 0;
-    padding: 0;
-}
-
 .footer {
-    background-color: #3C3C3C;
-    margin-left: 20vw;
+    margin-left: 18rem;
     margin-bottom: 0;
+    margin-top: 5rem;
     list-style-type: none;
-    font-family: "Montserrat";
-    padding: 1rem;
     color: var(--color-warm-white);
+    border-top: 2px solid var(--color-warm-black);
 }
 
 .footer-contact-wrapper {
@@ -19,42 +13,32 @@
     align-items: center;
 }
 
+.footer-contact-text h3 {
+    color: var(--color-warm-black);
+    font-size: 2rem;
+    line-height: 2.45rem;
+    margin-top: 4rem;
+    margin-bottom: 2.5rem;
+    font-weight: normal;
+}
+
+.footer-contact-link {
+    font-size: 1.125rem;
+    line-height: 1.625rem;
+    font-weight: normal;
+    border: 2px solid var(--color-warm-black);
+    color: var(--color-warm-black);
+    padding: 1.25rem;
+    margin-bottom: 4rem;
+    cursor: pointer;
+} 
+
 .footer-address-wrapper {
     display: flex;
     flex-direction: row;
     justify-content: end;
-    padding-top: 2rem;
-    padding-right: 2rem;
-}
-
-.footer-address-image {
-    padding-left: 1rem;
-    width: 371px;
-}
-
-.footer-address-wrapper li:first-child {
-    font-size: 2rem;
-    line-height: 2.45rem;
-    font-weight: normal;
-    padding-bottom: 0.5rem;
-}
-
-.footer-address-text li {
-    display: flex;
-    flex-flow: column nowrap;
-    padding-bottom: 0.25rem;
-}
-
-.footer-address-wrapper li:last-child {
-    font-size: 1rem;
-    line-height: 1.625rem;
-    font-weight: 300;
-    margin-top: auto;
-    padding-bottom: 0;
-}
-
-.footer-address-wrapper li:nth-of-type(3) {
-    padding-bottom: 2.43rem;
+    padding: 2rem 2rem 1rem 0;
+    background-color: #3C3C3C;
 }
 
 .footer-address-text {
@@ -62,5 +46,36 @@
     justify-content: flex-start;
     flex-direction: column;
     flex-wrap: wrap;
+    padding-right: 1rem;
 }
 
+.footer-address-text li {
+    font-size: 1.125rem;
+    line-height: 1.625rem;
+    font-weight: normal;
+    padding-bottom: 0.25rem;
+}
+
+.footer-address-image {
+    width: 371px;
+    padding-bottom: 3rem;
+}
+
+.footer-address-text li:first-child {
+    font-size: 2rem;
+    line-height: 2.45rem;
+    font-weight: normal;
+    padding-bottom: 0.5rem;
+}
+
+.footer-address-text li:nth-of-type(3) {
+    padding-bottom: 2.43rem;
+}
+
+.footer-address-text li:last-child {
+    font-size: 1rem;
+    line-height: 1.625rem;
+    font-weight: 300;
+    margin-top: auto;
+    padding-bottom: 0;
+}
