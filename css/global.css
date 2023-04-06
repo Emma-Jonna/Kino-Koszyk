@@ -63,15 +63,15 @@
 }
 
 .circle {
-  width: 10px;
-  height: 10px;
+  width: 0.75rem;
+  height: 0.75rem;
   border-radius: 100%;
-  background-color: #d9d9d9;
-  margin: 24px 3.5px 24px 3.5px;
+  background-color: var(--color-grey-300);
+  margin: 24px 0.25rem 24px 0.25rem;
   font-weight: normal;
   transition: background-color 2000ms ease;
 }
 
 .activeCircle {
-  background-color: black;
+  background-color: var(--color-warm-black)
 }
