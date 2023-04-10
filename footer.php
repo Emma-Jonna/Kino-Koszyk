@@ -3,11 +3,12 @@
 
 <div class="footer">
     <div class="footer-contact-wrapper">
+        <h5 class="h3-regular">Get In Touch With Kino Koszyk</h5>
         <div class="footer-contact-text">
             <?php dynamic_sidebar("footer-contact"); ?>
         </div>
         <div class="footer-contact-link">
-            <a href="#">Contact</a>
+            <a href="http://kino-koszyk-new.local/contact/">Contact</a>
         </div>
     </div>
 

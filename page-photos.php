@@ -47,20 +47,19 @@ $latest_posts_query = new WP_Query($args);
                         <p>All our photos</p>
                         <img src="<?= get_template_directory_uri() ?>/assets/Arrow.svg">
                     </div>
-                    <?php while ($latest_posts_query->have_posts()) : $latest_posts_query->the_post() ?>
-                        <?php
-                        foreach ($categories as $key => $category) {
-                            if ($category->name != "Uncategorised") {
-                        ?>
-                                <a href="<?= add_query_arg('category_name', $category->slug, 'http://kino-koszyk-new.local/photos') ?>">
-                                    <div class="dropdown-select-item">
-                                        <?= $category->name ?>
-                                    </div>
-                                </a>
                     <?php
-                            }
+                    foreach ($categories as $key => $category) {
+                        if ($category->name != "Uncategorised") {
+                    ?>
+                            <a href="<?= add_query_arg('category_name', $category->slug, 'http://kino-koszyk-new.local/photos') ?>">
+                                <div class="dropdown-select-item">
+                                    <?= $category->name ?>
+                                </div>
+                            </a>
+                    <?php
                         }
-                    endwhile ?>
+                    }
+                    ?>
                 </div>
             </div>
         </div>
