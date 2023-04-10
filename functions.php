@@ -110,6 +110,6 @@ add_action("init", function () {
 });
 
 add_action("wp_enqueue_scripts", function () {
-    wp_enqueue_style( 'custom-style', get_template_directory_uri() . '/css/footer.css', false, "1.0", "all" );
-    wp_enqueue_style( 'custom-style', get_template_directory_uri() . '/css/header.css', false, "1.0", "all" );
+    wp_enqueue_style('custom-style', get_template_directory_uri() . '/css/footer.css', false, "1.0", "all");
+    wp_enqueue_style('custom-style', get_template_directory_uri() . '/css/header.css', false, "1.0", "all");
 });

@@ -20,25 +20,40 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
 }
 
 .slideshow-wrapper {
   position: relative;
   background-color: #d9d9d9;
   width: 100%;
-  aspect-ratio: 4/2;
+  /* aspect-ratio: 4/2; */
+
+  /* height: 16.5rem;  */
+  aspect-ratio: 4/3;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .slideshowItem {
-  position: absolute;
-  top: 0;
-  display: none;
+  /* position: absolute; */
+  /* top: 0; */
+  /* display: none; */
   width: 100%;
+
+  height: 100%;
+
 }
 
 .slideshowItem img {
-  aspect-ratio: 4/2;
+  /* aspect-ratio: 4/2; */
   width: 100%;
+  
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
 }
 
 @keyframes slideshowFade {
@@ -74,4 +89,18 @@
 
 .activeCircle {
   background-color: var(--color-warm-black)
+}
+
+@media screen and (min-width: 700px) {  
+  .slideshow-wrapper {
+    aspect-ratio: 4/3;
+  }
+}
+
+@media screen and (min-width: 1000px) {
+  .slideshow-wrapper {
+    /* height: 80vh; */
+    /* height: 16.5rem;  */
+    aspect-ratio: 16/9;
+  }
 }
