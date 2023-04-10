@@ -44,6 +44,7 @@ add_action("init", function () {
         "has_archive" => false,
         'rewrite' => array('slug' => 'photos'),
         "menu_icon" => "dashicons-camera",
+        'taxonomies' => array('category'),
     ));
     // _____ Books _____
     register_post_type("books", array(
@@ -71,20 +72,6 @@ add_action("init", function () {
     ));
 });
 
-// add categories for attachments
-/* function add_categories_for_attachments()
-{
-    register_taxonomy_for_object_type('category', 'attachment');
-}
-add_action('init', 'add_categories_for_attachments'); */
-
-// add tags for attachments
-function add_tags_for_attachments()
-{
-    register_taxonomy_for_object_type('post_tag', 'attachment');
-}
-add_action('init', 'add_tags_for_attachments');
-
 function print_a($data)
 {
 ?>
@@ -110,6 +97,6 @@ add_action("init", function () {
 });
 
 add_action("wp_enqueue_scripts", function () {
-    wp_enqueue_style( 'custom-style', get_template_directory_uri() . '/css/footer.css', false, "1.0", "all" );
-    wp_enqueue_style( 'custom-style', get_template_directory_uri() . '/css/header.css', false, "1.0", "all" );
+    wp_enqueue_style('custom-style', get_template_directory_uri() . '/css/footer.css', false, "1.0", "all");
+    wp_enqueue_style('custom-style', get_template_directory_uri() . '/css/header.css', false, "1.0", "all");
 });

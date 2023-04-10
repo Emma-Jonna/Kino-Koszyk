@@ -50,7 +50,7 @@ $latest_posts_query = new WP_Query($args);
                 <!-- <video controls muted autoplay src=""></video> -->
                 <?php get_template_part("parts/shared/post", "images"); ?>
 
-                <?php print_a(get_fields()); ?>
+                <!-- <?php print_a(get_fields()); ?> -->
             </article>
         <?php endif; ?>
 </section>

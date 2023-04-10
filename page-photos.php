@@ -1,10 +1,31 @@
 <?php get_header(); ?>
 <?php
-$args = array(
-    "post_type" => "photos",
-    "orderby" => "date",
-    "order" => "DESC",
-);
+
+$categories = get_categories();
+$categoryId = 0;
+
+if (isset($_GET["category_name"])) {
+
+    foreach ($categories as $key => $category) {
+        if ($_GET["category_name"] == $category->slug) {
+            $categoryId = $category->term_id;
+        }
+    }
+
+    $args = array(
+        "post_type" => "photos",
+        "orderby" => "date",
+        "order" => "DESC",
+        "cat" => $categoryId,
+    );
+} else {
+    $args = array(
+        "post_type" => "photos",
+        "orderby" => "date",
+        "order" => "DESC",
+    );
+}
+
 $latest_posts_query = new WP_Query($args);
 ?>
 <section class="photos">
@@ -27,12 +48,19 @@ $latest_posts_query = new WP_Query($args);
                         <img src="<?= get_template_directory_uri() ?>/assets/Arrow.svg">
                     </div>
                     <?php while ($latest_posts_query->have_posts()) : $latest_posts_query->the_post() ?>
-                        <a href="<?= the_permalink() ?>">
-                            <div class="dropdown-select-item">
-                                <?= the_title() ?>
-                            </div>
-                        </a>
-                    <?php endwhile ?>
+                        <?php
+                        foreach ($categories as $key => $category) {
+                            if ($category->name != "Uncategorised") {
+                        ?>
+                                <a href="<?= add_query_arg('category_name', $category->slug, 'http://kino-koszyk-new.local/photos') ?>">
+                                    <div class="dropdown-select-item">
+                                        <?= $category->name ?>
+                                    </div>
+                                </a>
+                    <?php
+                            }
+                        }
+                    endwhile ?>
                 </div>
             </div>
         </div>
@@ -123,7 +151,6 @@ $latest_posts_query = new WP_Query($args);
             </div>
         </div>
     <?php endif; ?>
-
 </section>
 <script src="<?= get_template_directory_uri() ?>/dropdown.js"></script>
 <?php get_footer(); ?>

@@ -30,9 +30,9 @@
 <section class="joanna joanna_work">
     <h3>Work of Joanna Helander</h3>
     <div>
-        <button>Photos</button>
-        <button>Films</button>
-        <button>Books</button>
+        <a href="<?= add_query_arg('category_name', "joanna", 'http://kino-koszyk-new.local/photos') ?>">Photos</a>
+        <a href="http://kino-koszyk-new.local/films">Films</a>
+        <a href="http://kino-koszyk-new.local/books">Books</a>
     </div>
 </section>
 
