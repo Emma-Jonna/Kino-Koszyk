@@ -1,12 +1,33 @@
 <?php get_header(); ?>
 <?php
-$args = array(
-    "post_type" => "photos",
-    "orderby" => "date",
-    "order" => "DESC",
-);
-$latest_posts_query = new WP_Query($args);
+
 $categories = get_categories();
+$categoryId = 0;
+
+if (isset($_GET["category_name"])) {
+    foreach ($categories as $key => $category) {
+        if ($_GET["category_name"] == $category->slug) {
+            $categoryId = $category->term_id;
+        }
+    }
+
+    $args = array(
+        "post_type" => "photos",
+        "orderby" => "date",
+        "order" => "DESC",
+        "cat" => $categoryId,
+    );
+
+    // $categoryQuery = new WP_Query($args);
+} else {
+    $args = array(
+        "post_type" => "photos",
+        "orderby" => "date",
+        "order" => "DESC",
+    );
+}
+
+$latest_posts_query = new WP_Query($args);
 ?>
 <section class="photos">
 
@@ -30,21 +51,17 @@ $categories = get_categories();
                     <?php while ($latest_posts_query->have_posts()) : $latest_posts_query->the_post() ?>
                         <?php
                         foreach ($categories as $key => $category) {
+                            if ($category->name != "Uncategorised") {
                         ?>
-                            <a href="<?= the_permalink() ?>">
-                                <div class="dropdown-select-item">
-                                    <?= $category->name ?>
-                                </div>
-                            </a>
-                        <?php
+                                <a href="<?= add_query_arg('category_name', $category->slug, 'http://kino-koszyk-new.local/photos') ?>">
+                                    <div class="dropdown-select-item">
+                                        <?= $category->name ?>
+                                    </div>
+                                </a>
+                    <?php
+                            }
                         }
-                        ?>
-                        <!-- <a href="<?= the_permalink() ?>">
-                            <div class="dropdown-select-item">
-                                <?= the_title() ?>
-                            </div>
-                        </a> -->
-                    <?php endwhile ?>
+                    endwhile ?>
                 </div>
             </div>
         </div>
@@ -136,49 +153,5 @@ $categories = get_categories();
         </div>
     <?php endif; ?>
 </section>
-
-<?php
-$args = array(
-    "post_type" => "photos",
-    "orderby" => "date",
-    "order" => "DESC",
-    "cat" => 11,
-    // 'taxonomy' => 'dining-category',
-);
-$query = new WP_Query($args);
-$posts = get_posts($query);
-/* foreach ($cats as $cat) {
-?>
-    <a href="<?php echo get_category_link($cat->term_id) ?>">
-        <?php echo $cat->name; ?>
-    </a>
-<?php
-} */
-
-// print_a(get_categories());
-/* ?>
-<a href=<?php get_category_link(11) ?>>America</a>
-<?php */
-
-// $posts = get_posts($args);
-// print_a(get_posts($query));
-// print_a(get_category_link(11));
-
-while ($query->have_posts()) : $query->the_post();
-    // get_template_part("parts/shared/post", "photos");
-
-    foreach ($posts as $key => $value) {
-        // print_a($value);
-        // print_a(get_category($value->ID));
-        // print_a($value->ID);
-        // var_dump(get_posts());
-        // print_a(get_the_tags());
-        /* print_a(get_the_tags($value->ID));
-        $tag_list = $tags = get_the_term_list($value->ID, 'custom-tag', '<ul class="snpt-tags"><li>', '</li><li>', '</li></ul>');
-        print $tag_list; */
-        // print_a(get_post($query));
-    }
-endwhile;
-?>
 <script src="<?= get_template_directory_uri() ?>/dropdown.js"></script>
 <?php get_footer(); ?>
