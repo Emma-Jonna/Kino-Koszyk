@@ -5,6 +5,7 @@ $categories = get_categories();
 $categoryId = 0;
 
 if (isset($_GET["category_name"])) {
+
     foreach ($categories as $key => $category) {
         if ($_GET["category_name"] == $category->slug) {
             $categoryId = $category->term_id;
@@ -17,8 +18,6 @@ if (isset($_GET["category_name"])) {
         "order" => "DESC",
         "cat" => $categoryId,
     );
-
-    // $categoryQuery = new WP_Query($args);
 } else {
     $args = array(
         "post_type" => "photos",
