@@ -19,11 +19,10 @@ html {
 }
 
 main {
-  margin-left: 18rem;
-  gap: 5rem;
+  gap: 1.25rem;
   display: flex;
   flex-direction: column;
-  min-height: 80vh;
+  /* min-height: 80vh; */
 }
 
 section {
@@ -31,11 +30,11 @@ section {
 }
 
 section:first-of-type:not(.home) {
-  padding-top: 5rem;
+  padding-top: 2.5rem;
 }
 
 section:not(.home) {
-  padding: 0 5rem;
+  padding: 0 1.25rem;
 }
 
 .portrait {
@@ -56,4 +55,26 @@ li {
 a {
   text-decoration: none;
   color: var(--color-warm-black);
+}
+
+@media screen and (min-width: 700px) {
+  section:not(.home) {
+    padding: 0 2rem;
+  }
+}
+
+@media screen and (min-width: 1000px) {
+  main {
+    margin-left: 18rem;
+    gap: 5rem;
+    /* min-height: 80vh; */
+  }
+
+  section:not(.home) {
+    padding: 0 5rem;
+  }
+
+  section:first-of-type:not(.home) {
+    padding-top: 5rem;
+  }
 }

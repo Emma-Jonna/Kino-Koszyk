@@ -1,0 +1,140 @@
+.books {
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    /* gap: 5rem; */
+    gap: 1.25rem;
+
+    width: 100%;
+    /* height: 28.125rem; */
+}
+
+.books__title {
+    font-size: 2.5rem;
+    line-height: 4.75rem;
+    font-weight: normal;
+}
+
+.books__top_container-content {
+    display: flex;
+    flex-direction: column;
+    max-width: 43.375rem;
+    gap: 1.25rem;
+}
+
+.books__top_container-content > p {
+    font-size: 1rem;
+    line-height: 1.625rem;
+    font-weight: normal;
+}
+
+.books__top_container-content > p > a {
+    font-size: 1.25rem;
+    line-height: 1.875rem;  
+    font-weight: 600;
+    text-decoration: underline;
+}
+
+.books_gallery {
+    /* margin-top: 3.75rem; */
+    display: flex;
+
+    z-index: 1;
+    margin-top: 33.125rem;
+    background-color: var(--color-warm-white);
+}
+
+.books_gallery.gallery-z {
+    z-index: -1;
+}
+
+
+.books_gallery__wrapper {
+    margin-bottom: 2.5rem;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(1 1fr);
+    grid-gap: 0.875rem;
+    grid-row-gap: 1.25rem;
+}
+
+.books_gallery__wrapper .books__thumbnail {
+    /* aspect-ratio: 4/6; */
+    aspect-ratio: 5/7;
+    width: auto;
+    /* display: flex; */
+    /* width: 30%; */
+}
+
+.books_gallery__wrapper .books__thumbnail img {
+    object-fit: cover;
+    object-position: center;
+    display: flex;
+    width: 100%;
+    height: 100%;
+}
+
+.books__thumbnail:hover {
+    filter: brightness(80%);
+}
+
+@media screen and (min-width: 550px) {
+
+    .books_gallery {
+        margin-top: 30.125rem;
+    }
+}
+
+@media screen and (min-width: 650px) {
+
+    .books_gallery {
+        margin-top: 28.125rem;
+    }
+}
+
+@media screen and (min-width: 750px) {
+
+    .books_gallery {
+        margin-top: 25.625rem;
+    }
+
+    .books_gallery__wrapper {
+        margin-bottom: 5rem;
+        grid-gap: 1.25rem;
+    }
+
+}
+
+@media screen and (min-width: 1000px) {
+
+    .books__title {
+        font-size: 4.25rem;
+    }
+
+    .books__top_container-content > p {
+        font-size: 1.125rem;
+        line-height: 1.625rem;
+        font-weight: normal;
+    }
+
+    .books__top_container-content > p > a {
+        font-size: 1.5rem;
+        line-height: 1.875rem;  
+        font-weight: 600;
+        text-decoration: underline;
+    }
+
+    .books_gallery {
+        margin-top: 33.125rem;
+    }
+
+    .books_gallery__wrapper {
+        margin-bottom: 5rem;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(1 1fr);
+        grid-gap: 2.5rem;
+
+        /* grid-gap: 5rem; */
+    }
+
+}
