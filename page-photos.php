@@ -6,6 +6,7 @@ $args = array(
     "order" => "DESC",
 );
 $latest_posts_query = new WP_Query($args);
+$categories = get_categories();
 ?>
 <section class="photos">
 
@@ -27,11 +28,22 @@ $latest_posts_query = new WP_Query($args);
                         <img src="<?= get_template_directory_uri() ?>/assets/Arrow.svg">
                     </div>
                     <?php while ($latest_posts_query->have_posts()) : $latest_posts_query->the_post() ?>
-                        <a href="<?= the_permalink() ?>">
+                        <?php
+                        foreach ($categories as $key => $category) {
+                        ?>
+                            <a href="<?= the_permalink() ?>">
+                                <div class="dropdown-select-item">
+                                    <?= $category->name ?>
+                                </div>
+                            </a>
+                        <?php
+                        }
+                        ?>
+                        <!-- <a href="<?= the_permalink() ?>">
                             <div class="dropdown-select-item">
                                 <?= the_title() ?>
                             </div>
-                        </a>
+                        </a> -->
                     <?php endwhile ?>
                 </div>
             </div>
@@ -135,8 +147,6 @@ $args = array(
 );
 $query = new WP_Query($args);
 $posts = get_posts($query);
-
-// $cats = get_categories();
 /* foreach ($cats as $cat) {
 ?>
     <a href="<?php echo get_category_link($cat->term_id) ?>">
