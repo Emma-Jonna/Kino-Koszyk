@@ -1,0 +1,32 @@
+.contact__top_content {
+  margin-top: 2rem;
+}
+
+.contact__main_input {
+  background-color: var(--color-warm-white);
+  border: none;
+}
+
+.contact__main_item {
+  margin-top: 6rem;
+}
+
+.contact__main_item_content {
+  display: inline-block;
+  padding: 1rem;
+  padding-left: 0;
+}
+
+.contact__main_button {
+  cursor: pointer;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border: 1px solid black;
+  padding: 1rem;
+}
+
+.contact__main_button img {
+  margin-left: 1.2rem;
+}

@@ -2,6 +2,7 @@
 <?php wp_footer(); ?>
 
 <div class="footer">
+    <?php if($pagename != "contact"): ?>
     <div class="footer-contact-wrapper">
         <h5 class="h3-regular">Get In Touch With Kino Koszyk</h5>
         <div class="footer-contact-text">
@@ -11,6 +12,7 @@
             <a href="http://kino-koszyk-new.local/contact/">Contact</a>
         </div>
     </div>
+    <?php endif ?>
 
     <div class="footer-address-wrapper">
         <div class="footer-address-text">
