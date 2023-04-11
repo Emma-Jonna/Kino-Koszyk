@@ -3,8 +3,18 @@
 
     <h2 class="about__title"><?php echo the_title(); ?></h2>
     <article class="about__content">
-        <?php echo the_content(); ?>
+        <div class="about__content_text">
+            <?php echo the_content(); ?>
+        </div>
     </article>
+
+    <div class="read-more-wrapper">
+        <!-- <p class="read-more-dots">...</p> -->
+        <div class="read-more-container">
+            <p>Read more</p>
+            <img src="<?= get_template_directory_uri() ?>/assets/Arrow-strong.svg" alt="">
+        </div>
+    </div>
 
     <article class="about__content_bo_wrapper">
         <div class="about__content_bo_content">
@@ -16,7 +26,7 @@
                     <?php echo the_field('about_bo_persson'); ?>
                 </p>
             </div>
-            <div>
+            <div class="contact-info-bo">
                 <ul>
                     <li><?php echo the_field('bo_email'); ?></li>
                     <li><?php echo the_field('bo_phone'); ?></li>
@@ -30,9 +40,6 @@
     </article>
 
     <article class="about__content_joanna_wrapper">
-        <div class="about__content_joanna portrait">
-            <img src=<?php the_field('joanna_photo'); ?> alt="">
-        </div>
         <div class="about__content_joanna_content">
             <div>
                 <h3 class="about__content_joanna content_title">
@@ -42,7 +49,7 @@
                     <?php echo the_field('about_joanna_helander'); ?>
                 </p>
             </div>
-            <div>
+            <div class="contact-info-joanna">
                 <ul>
                     <li><?php echo the_field('joanna_email'); ?></li>
                     <li><?php echo the_field('joanna_phone'); ?></li>
@@ -50,7 +57,10 @@
             </div>
         </div>
 
+        <div class="about__content_joanna portrait">
+            <img src=<?php the_field('joanna_photo'); ?> alt="">
+        </div>
     </article>
 </section>
-
+<script src="<?= get_template_directory_uri() ?>/readMore.js"></script>
 <?php get_footer(); ?>

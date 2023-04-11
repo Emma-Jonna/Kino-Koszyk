@@ -1,15 +1,22 @@
-.about__content {
+.about__content_text {
   display: flex;
   flex-direction: column;
-  height: 350px;
-  justify-content: space-between;
+  gap: 20px;
+  height: 130px;
+  overflow: hidden;
 }
 
 .about__content_bo_wrapper,
 .about__content_joanna_wrapper {
   display: flex;
+  flex-direction: column;
+  align-items: center;
   margin-top: 80px;
   gap: 40px;
+}
+
+.about__content_joanna_wrapper {
+  margin-bottom: 80px;
 }
 
 .about__content_bo_content,
@@ -19,8 +26,103 @@
   justify-content: space-between;
 }
 
-h5 {
+h2 {
   color: var(--color-warm-black);
-  font-size: 2rem;
-  margin: 60px 0px;
+  font-size: 40px;
+  margin: 0 0 20px 0;
+  font-weight: 500;
+}
+
+h3 {
+  color: var(--color-warm-black);
+  font-size: 32px;
+  font-weight: 400;
+}
+
+.about__content_text p,
+.about__content_bo_content p,
+.about__content_joanna_content p {
+  color: var(--color-warm-black);
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.read-more-container {
+  display: none;
+}
+
+.hidden {
+  display: none;
+}
+
+.read-more-container {
+  display: flex;
+  align-items: flex-end;
+  gap: 12px;
+  font-weight: bold;
+  font-size: 16px;
+  margin: 16px 0 0 36px;
+}
+
+.read-more-container img:hover,
+.read-more-container p:hover {
+  cursor: pointer;
+}
+
+.read-more-container img {
+  width: 11px;
+  height: 19px;
+}
+
+@media screen and (min-width: 1000px) {
+  .about__content_text {
+    height: auto;
+  }
+
+  .about__content_bo_wrapper {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    margin-top: 80px;
+    gap: 40px;
+  }
+
+  .about__content_joanna_wrapper {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: flex-start;
+    margin-top: 80px;
+    gap: 40px;
+  }
+
+  h2 {
+    color: var(--color-warm-black);
+    font-size: 72px;
+    margin: 0 0 20px 0;
+    font-weight: 500;
+  }
+
+  h3 {
+    color: var(--color-warm-black);
+    font-size: 48px;
+    font-weight: 400;
+  }
+
+  .about__content_text p,
+  .about__content_bo_content p,
+  .about__content_joanna_content p {
+    color: var(--color-warm-black);
+    font-size: 18px;
+    font-weight: 500;
+  }
+
+  .contact-info-joanna li,
+  .contact-info-bo li {
+    color: var(--color-warm-black);
+    font-size: 24px;
+    font-weight: 400;
+  }
+}
+
+@media screen and (max-width: 750px) {
 }
