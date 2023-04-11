@@ -1,9 +1,11 @@
 </main>
 <?php wp_footer(); ?>
 
+<script src="<?= get_template_directory_uri() ?>/hamburger.js"></script>
+
 <div class="footer">
     <div class="footer-contact-wrapper">
-        <h5 class="h3-regular">Get In Touch With Kino Koszyk</h5>
+<!--         <h5 class="h3-regular">Get In Touch With Kino Koszyk</h5> -->
         <div class="footer-contact-text">
             <?php dynamic_sidebar("footer-contact"); ?>
         </div>
