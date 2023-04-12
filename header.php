@@ -30,6 +30,12 @@
 <body>
     <?php wp_body_open(); ?>
     <header>
+        <div class="test">
+            <a class="mobile-logo" href="<?= home_url() ?>"><img class="mobile-logo" src="<?= get_template_directory_uri() ?>/assets/Kino-Koszyk-mobile-logo.svg"></a>
+            <button class="hamburger">
+                <img src="<?= get_template_directory_uri() ?>/assets/hamburger.svg" alt="Hamburger menu icon">
+            </button>
+        </div>
         <nav>
             <div>
                 <a class="logo" href="<?= home_url() ?>">

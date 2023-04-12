@@ -92,3 +92,41 @@
   margin-top: auto;
   padding-bottom: 0;
 }
+
+@media screen and (max-width: 700px) {
+  .footer-address-wrapper {
+    padding: 1rem 0.6rem 0.6rem 0.6rem;
+    flex-direction: column-reverse;
+  }
+
+  .footer-address-image {
+    width: 100%;
+    padding-bottom: 0.625rem;
+  }
+
+  .footer-address-image img {
+    max-width: 100%;
+  }
+
+  .footer-address-text li:nth-of-type(1),
+  .footer-address-text li:nth-of-type(2), 
+  .footer-address-text li:nth-of-type(3) {
+    align-self: flex-start;
+  }
+
+  .footer-address-text li:nth-of-type(3) {
+    padding-bottom: 0;
+  }
+
+  .footer-address-text li:last-of-type {
+    padding-top: 1rem;
+    align-self: center;
+  } 
+}
+
+@media screen and (max-width: 1000px) { 
+  .footer {
+    margin-left: 0;
+    width: 100%;
+  }
+}
