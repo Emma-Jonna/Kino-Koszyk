@@ -24,16 +24,18 @@
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  align-self: flex-start;
 }
 
-h2 {
+/* font sizes */
+.about__title {
   color: var(--color-warm-black);
   font-size: 40px;
   margin: 0 0 20px 0;
   font-weight: 500;
 }
 
-h3 {
+.content_title {
   color: var(--color-warm-black);
   font-size: 32px;
   font-weight: 400;
@@ -47,12 +49,31 @@ h3 {
   font-weight: 500;
 }
 
+/* images */
+.about__content_joanna_image,
+.about__content_bo_image {
+  width: 165px;
+  height: 159px;
+}
+
+.about__content_joanna_image img,
+.about__content_bo_image img {
+  width: 165px;
+  height: 159px;
+  object-fit: cover;
+  object-position: left top;
+}
+
 .read-more-container {
   display: none;
 }
 
 .hidden {
   display: none;
+}
+
+.rotate {
+  transform: rotate(180deg);
 }
 
 .read-more-container {
@@ -79,6 +100,48 @@ h3 {
     height: auto;
   }
 
+  /* font sizes */
+  .about__title {
+    font-size: 72px;
+    font-weight: 500;
+  }
+
+  .content_title {
+    font-size: 48px;
+    font-weight: 400;
+  }
+
+  .about__content_text p,
+  .about__content_bo_content p,
+  .about__content_joanna_content p {
+    font-size: 18px;
+    font-weight: 500;
+  }
+
+  .contact-info-joanna li,
+  .contact-info-bo li {
+    color: var(--color-warm-black);
+    font-size: 24px;
+    font-weight: 400;
+  }
+
+  /* images */
+  .about__content_joanna_image,
+  .about__content_bo_image {
+    width: 471px;
+    height: 454px;
+  }
+
+  .about__content_joanna_image img,
+  .about__content_bo_image img {
+    width: 471px;
+    height: 454px;
+    object-fit: cover;
+    object-position: left top;
+  }
+}
+
+@media screen and (min-width: 700px) {
   .about__content_bo_wrapper {
     display: flex;
     flex-direction: row;
@@ -95,34 +158,23 @@ h3 {
     gap: 40px;
   }
 
-  h2 {
-    color: var(--color-warm-black);
-    font-size: 72px;
-    margin: 0 0 20px 0;
-    font-weight: 500;
-  }
-
-  h3 {
-    color: var(--color-warm-black);
-    font-size: 48px;
+  /* font sizes */
+  .content_title {
+    font-size: 32px;
     font-weight: 400;
   }
-
-  .about__content_text p,
-  .about__content_bo_content p,
-  .about__content_joanna_content p {
-    color: var(--color-warm-black);
-    font-size: 18px;
-    font-weight: 500;
+  /* images */
+  .about__content_joanna_image,
+  .about__content_bo_image {
+    width: 375px;
+    height: 361px;
   }
 
-  .contact-info-joanna li,
-  .contact-info-bo li {
-    color: var(--color-warm-black);
-    font-size: 24px;
-    font-weight: 400;
+  .about__content_joanna_image img,
+  .about__content_bo_image img {
+    width: 375px;
+    height: 361px;
+    object-fit: cover;
+    object-position: left top;
   }
-}
-
-@media screen and (max-width: 750px) {
 }

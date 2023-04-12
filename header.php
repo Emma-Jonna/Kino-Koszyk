@@ -9,13 +9,13 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@500&family=DM+Sans:wght@500&family=Oi&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="<?= get_template_directory_uri() ?>/css/home.css">
+    <!-- <link rel="stylesheet" href="<?= get_template_directory_uri() ?>/css/home.css"> -->
     <link rel="stylesheet" href="<?= get_template_directory_uri() ?>/style.css">
     <link rel="stylesheet" href="<?= get_template_directory_uri() ?>/css/header.css">
     <link rel="stylesheet" href="<?= get_template_directory_uri() ?>/css/single.css">
     <link rel="stylesheet" href="<?= get_template_directory_uri() ?>/css/dropdown.css">
     <link rel="stylesheet" href="<?= get_template_directory_uri() ?>/css/global.css">
-    <link rel="stylesheet" href="<?= get_template_directory_uri() ?>/css/joanna.css">
+    <!-- <link rel="stylesheet" href="<?= get_template_directory_uri() ?>/css/joanna.css"> -->
     <link rel="stylesheet" href="<?= get_template_directory_uri() ?>/css/photos.css">
     <link rel="stylesheet" href="<?= get_template_directory_uri() ?>/css/books.css">
     <link rel="stylesheet" href="<?= get_template_directory_uri() ?>/css/films.css">

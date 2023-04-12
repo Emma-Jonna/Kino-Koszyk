@@ -1,22 +1,40 @@
 const readMoreText = document.querySelector(".read-more-container p");
-const readMoredots = document.querySelector(".read-more-wrapper");
+const readMoreImage = document.querySelector(".read-more-container img");
+const readMore = document.querySelector(".read-more-wrapper");
 const content = document.querySelector(".about__content_text");
 const readMoreButton = document.querySelector(".read-more-wrapper");
+const contactInfoBo = document.querySelector(".contact-info-bo");
+const contactInfoJoanna = document.querySelector(".contact-info-bo");
 
 console.log(window.innerWidth);
 
-if (window.innerWidth > 1000) {
+if (window.innerWidth > 700) {
   readMoreButton.classList.add("hidden");
+} else {
+  contactInfoBo.classList.add("hidden");
+  contactInfoJoanna.classList.add("hidden");
 }
 
-window.addEventListener("resize", () => {});
+window.addEventListener("resize", () => {
+  if (window.innerWidth > 700) {
+    readMoreButton.classList.add("hidden");
+    content.style.height = "auto";
+    contactInfoBo.classList.remove("hidden");
+    contactInfoJoanna.classList.remove("hidden");
+  } else {
+    readMoreButton.classList.remove("hidden");
+    content.style.height = "130px";
+    contactInfoBo.classList.add("hidden");
+    contactInfoJoanna.classList.add("hidden");
+  }
+});
 
 readMoreText.addEventListener("click", () => {
-  if (readMoredots.classList.contains("active")) {
-    readMoredots.classList.remove("active");
+  if (readMore.classList.contains("active")) {
+    readMore.classList.remove("active");
     content.style.height = "130px";
   } else {
-    readMoredots.classList.add("active");
+    readMore.classList.add("active");
     content.style.height = "auto";
   }
 });

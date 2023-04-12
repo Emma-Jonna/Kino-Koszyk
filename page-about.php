@@ -34,8 +34,10 @@
             </div>
         </div>
 
-        <div class="about__content_bo portrait">
-            <img src=<?php the_field('bo_photo'); ?> alt="">
+        <div class="image-container">
+            <div class="about__content_bo_image">
+                <img src=<?php the_field('bo_photo'); ?> alt="">
+            </div>
         </div>
     </article>
 
@@ -56,9 +58,10 @@
                 </ul>
             </div>
         </div>
-
-        <div class="about__content_joanna portrait">
-            <img src=<?php the_field('joanna_photo'); ?> alt="">
+        <div class="image-container">
+            <div class="about__content_joanna_image">
+                <img src=<?php the_field('joanna_photo'); ?> alt="">
+            </div>
         </div>
     </article>
 </section>
