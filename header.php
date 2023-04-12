@@ -33,7 +33,9 @@
         <div class="test">
             <a class="mobile-logo" href="<?= home_url() ?>"><img class="mobile-logo" src="<?= get_template_directory_uri() ?>/assets/Kino-Koszyk-mobile-logo.svg"></a>
             <button class="hamburger">
-                <img src="<?= get_template_directory_uri() ?>/assets/hamburger.svg" alt="Hamburger menu icon">
+                <div class="hamburger-line"></div>
+                <div class="hamburger-line"></div>
+                <div class="hamburger-line"></div>
             </button>
         </div>
         <nav>

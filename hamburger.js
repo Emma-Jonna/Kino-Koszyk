@@ -1,15 +1,22 @@
 const hamburger = document.querySelector(".hamburger");
+const hamburgerLines = document.querySelectorAll(".hamburger-line");
 const nav = document.querySelector("nav");
 const menuLinks = document.querySelectorAll(".nav__list_item");
 
 function toggleMenu() {
     if (nav.classList.contains("showMenu")) {
         nav.classList.remove("showMenu");
-        hamburger.style.color = "black";
+        hamburger.classList.remove("close");
+        hamburgerLines.forEach((hamburgerLine) => {
+            hamburgerLine.style.backgroundColor = "var(--color-warm-black)";
+        });
     }
     else {
         nav.classList.add("showMenu");
-        hamburger.style.color = "white";
+        hamburger.classList.add("close");
+        hamburgerLines.forEach((hamburgerLine) => {
+            hamburgerLine.style.backgroundColor = "var(--color-warm-white)";
+        });
     }
 };
 
