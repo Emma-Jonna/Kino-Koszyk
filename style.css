@@ -34,6 +34,10 @@ section {
   width: 100%;
 }
 
+section:first-of-type {
+  margin-top: 4rem;
+}
+
 section:first-of-type:not(.home, .single) {
   padding-top: 2.5rem;
 }
@@ -78,6 +82,9 @@ a {
 
   section:not(.home) {
     padding: 0 5rem;
+  }
+  section:first-of-type {
+    margin-top: 0;
   }
 
   section:first-of-type:not(.home, .single) {
