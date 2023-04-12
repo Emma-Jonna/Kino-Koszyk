@@ -34,7 +34,7 @@ section {
   width: 100%;
 }
 
-section:first-of-type:not(.home) {
+section:first-of-type:not(.home, .single) {
   padding-top: 2.5rem;
 }
 
@@ -42,12 +42,12 @@ section:not(.home) {
   padding: 0 1.25rem;
 }
 
-.portrait {
+.about .portrait {
   width: 165px;
   height: 159px;
 }
 
-.portrait img {
+.about .portrait img {
   width: 165px;
   height: 159px;
   object-fit: cover;
@@ -80,7 +80,7 @@ a {
     padding: 0 5rem;
   }
 
-  section:first-of-type:not(.home) {
+  section:first-of-type:not(.home, .single) {
     padding-top: 5rem;
   }
 

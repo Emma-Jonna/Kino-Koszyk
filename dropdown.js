@@ -30,3 +30,6 @@ btn.addEventListener("click", () => {
   clickedPositionY = window.scrollY;
   dropDownActive = !dropDownActive;
 });
+
+const parentElement = document.querySelector("merge");
+console.log(parentElement);

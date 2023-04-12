@@ -12,7 +12,7 @@ $latest_posts_query = new WP_Query($args);
 
 ?>
 <!-- <?php print_a($post) ?> -->
-<section class="photo_single">
+<section class="photo_single single">
     <?php if ($latest_posts_query->have_posts()) : ?>
         <?php while (have_posts()) : the_post(); ?>
             <article>

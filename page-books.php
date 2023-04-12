@@ -7,10 +7,11 @@ $args = array(
 );
 $latest_posts_query = new WP_Query($args);
 ?>
+
 <section class="books">
 
     <h2 class="books__title">
-        <?= the_title(); ?>
+        <?= strtoupper(get_the_title()); ?>
     </h2>
 
     <article class="books__top_container">
