@@ -6,13 +6,13 @@ $args = array(
 );
 $getHeroImages = new WP_Query($args);
 
-$args = array(
+$news = array(
     "post_type" => "news",
-    "post_per_page" => 3,
+    "posts_per_page" => 3,
     "orderby" => "date",
     "order" => "DESC",
 );
-$latest_posts_query = new WP_Query($args);
+$latest_posts_query = new WP_Query($news);
 ?>
 <?php get_header() ?>
 <section class="home">
@@ -21,13 +21,17 @@ $latest_posts_query = new WP_Query($args);
     </div>
 </section>
 <section class="home_news">
-    <a class="home_news-link" href="/news">News</a>
+    <h2 class="home-page-news">News</h2>
     <?php if (have_posts()) : ?>
-        <!-- <div class="hero_news-wrapper"> -->
         <?php while ($latest_posts_query->have_posts()) : $latest_posts_query->the_post();
             get_template_part("parts/shared/post", "news"); ?>
         <?php endwhile; ?>
-        <!-- </div> -->
     <?php endif; ?>
+    <div class="read-more-news">
+        <a class="home_news-link" href="/news">Read more news</a>
+        <div class="read-more-news-arrow">
+            <img src="<?= get_template_directory_uri() ?>/assets/Arrow-strong.svg" alt="">
+        </div>
+    </div>
 </section>
 <?php get_footer() ?>

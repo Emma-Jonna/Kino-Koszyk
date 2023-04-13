@@ -4,19 +4,18 @@ $args = array(
     "post_type" => "news",
     "orderby" => "date",
     "order" => "DESC",
+    'posts_per_page' => 6,
 );
 $latest_posts_query = new WP_Query($args);
 
 ?>
 <section class="news">
-
     <a class="news__redirect" href="<?= home_url() ?>">
         Back
     </a>
     <h2 class="news__title">
         <?= the_title(); ?>
     </h2>
-
 </section>
 
 <section class="news news_gallery">

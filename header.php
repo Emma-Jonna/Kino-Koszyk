@@ -9,7 +9,6 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@500&family=DM+Sans:wght@500&family=Oi&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700&display=swap" rel="stylesheet">
-    <!-- <link rel="stylesheet" href="<?= get_template_directory_uri() ?>/css/home.css"> -->
     <link rel="stylesheet" href="<?= get_template_directory_uri() ?>/style.css">
     <link rel="stylesheet" href="<?= get_template_directory_uri() ?>/css/header.css">
     <link rel="stylesheet" href="<?= get_template_directory_uri() ?>/css/single.css">
@@ -23,6 +22,7 @@
     <link rel="stylesheet" href="<?= get_template_directory_uri() ?>/css/about.css">
     <link rel="stylesheet" href="<?= get_template_directory_uri() ?>/css/contact.css">
     <link rel="stylesheet" href="<?= get_template_directory_uri() ?>/css/footer.css">
+    <link rel="stylesheet" href="<?= get_template_directory_uri() ?>/css/news.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat">
     <?php wp_head(); ?>
 </head>
@@ -57,7 +57,7 @@
                                 <?= strtoupper($item->title); ?>
                             </a>
 
-                        <!-- The elseif below does not seem to work (line 61-64) -->
+                            <!-- The elseif below does not seem to work (line 61-64) -->
                         <?php elseif ($item->post_name === "joanna-helander" && $post->post_title === "Joanna Helander") : ?>
                             <a class="nav__list_item nav__list_item_<?= $item->post_name ?> active" title="<?= $item->title; ?>" href="<?= $item->url; ?>">
                                 <?= strtoupper($item->title); ?>
@@ -67,7 +67,7 @@
                             <a class="nav__list_item nav__list_item_<?= $item->post_name ?>" title="<?= $item->title; ?>" href="<?= $item->url; ?>">
                                 <p><?= strtoupper($item->title); ?></p>
                                 <svg class="menu-arrow" width="28" height="17" viewBox="0 0 28 17" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path id="menu-arrow" d="M2 2L14 14L26 2" stroke="#1F1D19" stroke-width="3" stroke-linecap="round"/>
+                                    <path id="menu-arrow" d="M2 2L14 14L26 2" stroke="#1F1D19" stroke-width="3" stroke-linecap="round" />
                                 </svg>
                             </a>
 
