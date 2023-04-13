@@ -44,7 +44,7 @@ $latest_posts_query = new WP_Query($args);
             <div class="dropdown-container-content">
                 <div class="dropdown-select-container">
                     <div class="dropdown-select-placeholder">
-                        <p>All our photos</p>
+                        <p>All our <?= strtolower(get_the_title()); ?></p>
                         <img src="<?= get_template_directory_uri() ?>/assets/Arrow.svg">
                     </div>
                     <?php

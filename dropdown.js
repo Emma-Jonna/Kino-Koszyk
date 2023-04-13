@@ -1,7 +1,6 @@
 const btn = document.querySelector(".dropdown-select-placeholder");
 const btnContainer = document.querySelector(".dropdown-select-container");
 
-const gallerySectionBooks = document.querySelector(".books_gallery");
 const targetElementsZ = document.querySelectorAll('section[class*="_gallery"]');
 
 let clickedPositionY = 0;
