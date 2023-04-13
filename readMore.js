@@ -41,8 +41,10 @@ readMoreText.addEventListener("click", () => {
   if (readMore.classList.contains("active")) {
     readMore.classList.remove("active");
     content.style.height = "130px";
+    readMoreText.textContent = "Read more"; 
   } else {
     readMore.classList.add("active");
     content.style.height = "auto";
+    readMoreText.textContent = "Read less"; 
   }
 });
