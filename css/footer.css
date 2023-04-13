@@ -19,8 +19,7 @@
   color: var(--color-warm-black);
   font-size: 2rem;
   line-height: 2.45rem;
-  margin-top: 4rem;
-  margin-bottom: 2.5rem;
+  margin: 4rem 1.25rem 2.5rem 1.25rem;
   font-weight: normal;
 }
 
@@ -50,7 +49,7 @@
   display: flex;
   flex-direction: row;
   justify-content: end;
-  padding: 2rem 2rem 1rem 0;
+  padding: 2rem 2rem 1rem 2rem;
   background-color: #3c3c3c;
 }
 
@@ -85,11 +84,14 @@
   padding-bottom: 2.43rem;
 }
 
+.footer-address-text li:nth-of-type(4) {
+  padding-bottom: 2rem;
+}
+
 .footer-address-text li:last-child {
   font-size: 1rem;
   line-height: 1.625rem;
   font-weight: 300;
-  margin-top: auto;
   padding-bottom: 0;
 }
 
@@ -97,6 +99,10 @@
   .footer-address-wrapper {
     padding: 1rem 0.6rem 0.6rem 0.6rem;
     flex-direction: column-reverse;
+  }
+
+  .footer-address-text {
+    padding-right: 0;
   }
 
   .footer-address-image {
