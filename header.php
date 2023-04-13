@@ -60,6 +60,11 @@
                             <a class="nav__list_item nav__list_item_<?= $item->post_name ?> active" title="<?= $item->title; ?>" href="<?= $item->url; ?>">
                                 <?= strtoupper($item->title); ?>
                             </a>
+                        <?php elseif ($item->title != "Joanna Helander" && $item->post_name === $post->post_type) : ?>
+                            <a class="nav__list_item nav__list_item_<?= $item->post_name ?>" title="<?= $item->title; ?>" href="<?= $item->url; ?>">
+                                <img class="nav__page_indicator" src="<?= get_template_directory_uri() ?>/assets/active-page-indicator.svg" alt="Selected Page Indicator">
+                                <?= strtoupper($item->title); ?>
+                            </a>
                         <?php elseif ($item) : ?>
                             <a class="nav__list_item nav__list_item_<?= $item->post_name ?>" title="<?= $item->title; ?>" href="<?= $item->url; ?>">
                                 <?= strtoupper($item->title); ?>
