@@ -56,10 +56,21 @@
                                 <img class="nav__page_indicator" src="<?= get_template_directory_uri() ?>/assets/active-page-indicator.svg" alt="Selected Page Indicator">
                                 <?= strtoupper($item->title); ?>
                             </a>
+
+                        <!-- The elseif below does not seem to work (line 61-64) -->
                         <?php elseif ($item->post_name === "joanna-helander" && $post->post_title === "Joanna Helander") : ?>
                             <a class="nav__list_item nav__list_item_<?= $item->post_name ?> active" title="<?= $item->title; ?>" href="<?= $item->url; ?>">
                                 <?= strtoupper($item->title); ?>
                             </a>
+
+                        <?php elseif ($item->title === "Joanna Helander") : ?>
+                            <a class="nav__list_item nav__list_item_<?= $item->post_name ?>" title="<?= $item->title; ?>" href="<?= $item->url; ?>">
+                                <p><?= strtoupper($item->title); ?></p>
+                                <svg class="menu-arrow" width="28" height="17" viewBox="0 0 28 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path id="menu-arrow" d="M2 2L14 14L26 2" stroke="#1F1D19" stroke-width="3" stroke-linecap="round"/>
+                                </svg>
+                            </a>
+
                         <?php elseif ($item->title != "Joanna Helander" && $item->post_name === $post->post_type) : ?>
                             <a class="nav__list_item nav__list_item_<?= $item->post_name ?>" title="<?= $item->title; ?>" href="<?= $item->url; ?>">
                                 <img class="nav__page_indicator" src="<?= get_template_directory_uri() ?>/assets/active-page-indicator.svg" alt="Selected Page Indicator">
