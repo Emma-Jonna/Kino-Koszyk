@@ -4,9 +4,7 @@ const readMore = document.querySelector(".read-more-wrapper");
 const content = document.querySelector(".about__content_text");
 const readMoreButton = document.querySelector(".read-more-wrapper");
 const contactInfoBo = document.querySelector(".contact-info-bo");
-const contactInfoJoanna = document.querySelector(".contact-info-bo");
-
-console.log(window.innerWidth);
+const contactInfoJoanna = document.querySelector(".contact-info-joanna");
 
 if (window.innerWidth > 700) {
   readMoreButton.classList.add("hidden");

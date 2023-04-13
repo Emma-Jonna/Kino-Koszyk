@@ -1,32 +1,34 @@
 /* Fonts */
 .joanna__title {
   color: var(--color-warm-black);
-  font-size: 40px;
+  font-size: 2.5rem;
   font-weight: 400;
 }
 
 .joanna__top_container-right {
   color: var(--color-warm-black);
-  font-size: 16px;
+  font-size: 1rem;
   font-weight: 400;
+  height: 130px;
+  overflow: hidden;
 }
 
 .joanna__top_container-quote {
   color: var(--color-warm-black);
-  font-size: 16px;
+  font-size: 1rem;
   font-weight: 700;
 }
 
 .joanna__top_container-source {
   color: var(--color-warm-black);
-  font-size: 14px;
+  font-size: 0.875rem;
   font-weight: 300;
 }
 
 .joanna_work_bottom h3,
 .joanna_bio__title {
   color: var(--color-warm-black);
-  font-size: 24px;
+  font-size: 1.5rem;
   font-weight: 600;
 }
 
@@ -35,16 +37,20 @@
 }
 
 .joanna_bio__title {
-  margin: 34px 0 16px 0;
+  margin: 2rem 0 1rem 0;
 }
 
 .joanna_bio img {
-  margin: 24px 0 24px 0;
+  margin: 1.5rem 0 1.5rem 0;
+}
+
+.joanna__top_container-left {
+  margin-bottom: 2rem;
 }
 
 .joanna_work_bottom a {
   color: var(--color-warm-black);
-  font-size: 20px;
+  font-size: 1.25rem;
   font-weight: 700;
   border: solid var(--color-warm-black) 2px;
   width: 161px;
@@ -56,8 +62,8 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 16px;
-  margin: 24px 0 40px 0;
+  gap: 1rem;
+  margin: 1.5rem 0 2.5rem 0;
 }
 
 .joanna_work_bottom_link {
@@ -67,47 +73,51 @@
 }
 
 .joanna_work_bottom_link a {
-  padding-top: 16px;
+  padding-top: 1rem;
 }
 
 .joanna_bio {
-  margin-bottom: 40px;
+  margin-bottom: 2.5rem;
 }
 
 .joanna_bio p {
   color: var(--color-warm-black);
-  font-size: 16px;
+  font-size: 1rem;
   font-weight: 400;
 }
 
 .read-more-container-joanna {
   color: var(--color-warm-black);
-  font-size: 20px;
+  font-size: 1.25rem;
   font-weight: 600;
   text-decoration: underline;
+  margin-top: 0.625rem;
 }
 
 @media screen and (min-width: 700px) {
   /* Fonts */
   .joanna__top_container-right {
-    font-size: 18px;
+    font-size: 1.125rem;
     width: 70%;
+    height: auto;
+    overflow: hidden;
   }
 
   .joanna__top_container-quote {
-    font-size: 20px;
+    font-size: 1.25rem;
   }
 
   .joanna_work_top a {
-    font-size: 24px;
+    font-size: 1.5rem;
     font-weight: 600;
     border: solid var(--color-warm-black) 2px;
     width: 253px;
     height: 137px;
     display: block;
   }
-  .read-more-container-joanna {
-    font-size: 14px;
+  .read-more-container-joanna,
+  .read-more-container-joanna-anchor {
+    font-size: 0.875rem;
     font-weight: 600;
     font-style: italic;
   }
@@ -115,7 +125,7 @@
   .joanna__top_container {
     display: flex;
     flex-direction: row;
-    gap: 35px;
+    gap: 2rem;
   }
 
   .joanna_work_top_links {
@@ -123,7 +133,7 @@
     flex-direction: row;
     align-items: center;
     justify-content: space-around;
-    margin: 24px 0 40px 0;
+    margin: 1.5rem 0 2.5rem 0;
   }
 
   .joanna_work_top_link {
@@ -133,33 +143,34 @@
   }
 
   .joanna_work_top_link a {
-    padding-top: 50px;
+    padding-top: 3rem;
   }
 
   .joanna_bio {
-    margin-bottom: 80px;
+    margin-bottom: 5rem;
   }
 
-  .joanna_bio article img {
+  .joanna_bio article img,
+  .joanna__top_container-left {
     margin: 0;
   }
 
   .joanna_bio article {
-    margin: 40px 0 40px 0;
+    margin: 2.5rem 0 2.5rem 0;
   }
 
   .article_1 {
     display: flex;
     flex-direction: row;
     justify-content: center;
-    gap: 40px;
+    gap: 2.5rem;
   }
 
   .article_2 {
     display: flex;
     flex-direction: row-reverse;
     justify-content: center;
-    gap: 40px;
+    gap: 2.5rem;
   }
 
   .joanna .article_1 img,
@@ -176,30 +187,30 @@
 @media screen and (min-width: 1000px) {
   /* Fonts */
   .joanna__title {
-    font-size: 68px;
+    font-size: 4.25rem;
   }
 
   .joanna__top_container-right {
-    font-size: 18px;
+    font-size: 1.125rem;
   }
 
   .joanna__top_container-quote {
-    font-size: 32px;
+    font-size: 2rem;
     font-weight: 600;
   }
 
   .joanna__top_container-source {
-    font-size: 16px;
+    font-size: 1rem;
     font-weight: 300;
   }
 
   .joanna_work_top h3,
   .joanna_bio__title {
-    font-size: 48px;
+    font-size: 3rem;
   }
 
   .joanna_work_top a {
-    font-size: 32px;
+    font-size: 2rem;
     border: solid var(--color-warm-black) 2px;
     width: 312px;
     height: 169px;
@@ -212,14 +223,15 @@
   }
 
   .joanna_work_top_link a {
-    padding-top: 65px;
+    padding-top: 4rem;
   }
 
   .joanna_bio p {
-    font-size: 18px;
+    font-size: 1.125rem;
   }
-  .read-more-container-joanna {
-    font-size: 18px;
+  .read-more-container-joanna,
+  .read-more-container-joanna-anchor {
+    font-size: 1.125rem;
     font-weight: 600;
     font-style: italic;
     text-decoration: underline;
