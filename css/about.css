@@ -6,6 +6,10 @@
   overflow: hidden;
 }
 
+.rotate {
+  transform: rotate(180deg);
+}
+
 .about__content_bo_wrapper,
 .about__content_joanna_wrapper {
   display: flex;

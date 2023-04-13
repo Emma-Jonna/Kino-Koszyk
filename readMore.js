@@ -42,9 +42,11 @@ readMoreText.addEventListener("click", () => {
     readMore.classList.remove("active");
     content.style.height = "130px";
     readMoreText.textContent = "Read more"; 
+    readMoreImage.classList.remove("rotate");
   } else {
     readMore.classList.add("active");
     content.style.height = "auto";
     readMoreText.textContent = "Read less"; 
+    readMoreImage.classList.add("rotate");
   }
 });
