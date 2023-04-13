@@ -2,7 +2,7 @@
 <section class="contact">
     <div class="contact-top">
         <h2 class="contact-main-title">
-            <?= get_the_title() ?>
+            <?= strtoupper(get_the_title()); ?>
         </h2>
 
         <div class="contact__top_content">

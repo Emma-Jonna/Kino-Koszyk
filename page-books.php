@@ -18,6 +18,7 @@ $latest_posts_query = new WP_Query($args);
         <div class="books__top_container-content">
             <?= the_content(); ?>
         </div>
+
         <div class="dropdown-container">
             <div class="dropdown-container-content">
                 <div class="dropdown-select-container">

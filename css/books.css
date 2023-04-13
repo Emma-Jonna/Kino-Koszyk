@@ -117,7 +117,7 @@
 }
 
 .books_single__content_wrapper > .merge > .books_single__content_wrapper-img_wrapper {
-    max-height: 50vh;
+    max-height: 70vh;
     overflow: hidden;
 }
 
@@ -195,6 +195,13 @@
     background-color: var(--color-grey-600);
 }
 
+@media screen and (min-width: 390px) {
+
+    .books_gallery {
+        margin-top: 33.125rem;
+    }
+}
+
 @media screen and (min-width: 550px) {
 
     .books_gallery {
@@ -207,19 +214,26 @@
     .books_gallery {
         margin-top: 28.125rem;
     }
+
+    .books_single .books_single__content_wrapper > .merge {
+        flex-direction: row;
+    }
+
+    .books_single__post_navigation {
+        margin-top: 2.5rem;
+    }
 }
 
 @media screen and (min-width: 750px) {
 
     .books_gallery {
-        margin-top: 25.625rem;
+        margin-top: 26.625rem;
     }
 
     .books_gallery__wrapper {
         margin-bottom: 5rem;
         grid-gap: 1.25rem;
     }
-
 }
 
 @media screen and (min-width: 1000px) {
@@ -244,7 +258,7 @@
     }
 
     .books_gallery {
-        margin-top: 33.125rem;
+        margin-top: 34.125rem;
     }
 
     .books_gallery__wrapper {
@@ -258,11 +272,8 @@
 
     .books_single.single {
         padding-top: 5rem;
-        height: 100vh;
-    }
-
-    .books_single .books_single__header {
-        margin-bottom: 2.5rem;
+        /* height: 100vh; */
+        height: 100%;
     }
 
     .books_single .books_single__header-redirect,
@@ -285,11 +296,14 @@
     .books_single__content_wrapper > .merge > .books_single__content_wrapper-content {
         width: 50%;
         gap: 1.5rem;
+        min-height: 710px;
     }
 
     .books_single__post_navigation {
         gap: 2.5rem;
         padding: 1.25rem 0;
+        
+        margin-top: 0;
     }
     
     .books_single__post_navigation .navigation_container {

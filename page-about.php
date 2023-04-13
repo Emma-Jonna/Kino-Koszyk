@@ -1,7 +1,9 @@
 <?php get_header(); ?>
 <section class="about">
 
-    <h2 class="about__title"><?php echo the_title(); ?></h2>
+    <h2 class="about__title">
+        <?= strtoupper(get_the_title()); ?>
+    </h2>
     <article class="about__content">
         <div class="about__content_text">
             <?php echo the_content(); ?>

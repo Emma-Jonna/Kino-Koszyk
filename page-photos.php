@@ -31,7 +31,7 @@ $latest_posts_query = new WP_Query($args);
 <section class="photos">
 
     <h2 class="photos__title">
-        <?= the_title(); ?>
+        <?= strtoupper(get_the_title()); ?>
     </h2>
 
     <article class="photos__top_container">

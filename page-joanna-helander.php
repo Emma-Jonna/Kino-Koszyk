@@ -2,7 +2,7 @@
 <section class="joanna">
 
     <h2 class="joanna__title">
-        <?php the_title() ?>
+        <?= strtoupper(get_the_title()); ?>
     </h2>
 
     <article class="joanna__top_container">

@@ -21,8 +21,8 @@ $latest_posts_query = new WP_Query($news);
     </div>
 </section>
 <section class="home_news">
-    <h2 class="home-page-news">News</h2>
     <?php if (have_posts()) : ?>
+        <h2 class="home-page-news">NEWS</h2>
         <?php while ($latest_posts_query->have_posts()) : $latest_posts_query->the_post();
             get_template_part("parts/shared/post", "news"); ?>
         <?php endwhile; ?>

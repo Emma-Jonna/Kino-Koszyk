@@ -87,7 +87,7 @@ a {
     margin-top: 0;
   }
 
-  section:first-of-type:not(.home, .contact, .single) {
+  section:first-of-type:not(.home, .single) {
     padding-top: 5rem;
   }
 

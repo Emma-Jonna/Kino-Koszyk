@@ -17,11 +17,11 @@ if (!has_post_thumbnail()) {
 } else {
     $image = wp_get_attachment_image_src(get_post_thumbnail_id($post->ID), '');
     $image_width = $image[1];
-    $image_heigth = $image[2];
+    $image_height = $image[2];
 
-    if ($image_width > $image_heigth) {
+    if ($image_width > $image_height) {
         $img_ratio = "landscape";
-    } elseif ($image_width == $image_heigth) {
+    } elseif ($image_width == $image_height) {
         $img_ratio = "square";
     } else {
         $img_ratio = "portrait";
@@ -71,10 +71,10 @@ if (get_field("location_field") == NULL) {
 
                 <div class="books_single__post_navigation">
                     <div class="navigation_container">
-                        <?php next_post_link('%link', __('<')); ?>
+                        <?php next_post_link('%link', '<img src="' . get_template_directory_uri() . '/assets/redirect-arrow.svg" alt="Arrow svg icon">'); ?>
                     </div>
-                    <div class="navigation_container">
-                        <?php previous_post_link('%link', __('>')); ?>
+                    <div style="transform: rotate(180deg);" class="navigation_container">
+                        <?php previous_post_link('%link', '<img src="' . get_template_directory_uri() . '/assets/redirect-arrow.svg" alt="Arrow svg icon">'); ?>
                     </div>
                 </div>
 

@@ -14,7 +14,7 @@ $latest_posts_query = new WP_Query($args);
         Back
     </a>
     <h2 class="news__title">
-        <?= the_title(); ?>
+        <?= strtoupper(get_the_title()); ?>
     </h2>
 </section>
 

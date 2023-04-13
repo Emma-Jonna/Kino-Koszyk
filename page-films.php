@@ -7,14 +7,14 @@ $args = array(
 );
 $latest_posts_query = new WP_Query($args);
 ?>
+
 <section class="films">
 
     <h2 class="films__title">
-        <?= the_title(); ?>
+        <?= strtoupper(get_the_title()); ?>
     </h2>
 
     <article class="films__top_container">
-
         <div class="films__top_container-content">
             <?= the_content(); ?>
         </div>
