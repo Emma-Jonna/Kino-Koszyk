@@ -15,7 +15,7 @@
     <link rel="stylesheet" href="<?= get_template_directory_uri() ?>/css/single.css">
     <link rel="stylesheet" href="<?= get_template_directory_uri() ?>/css/dropdown.css">
     <link rel="stylesheet" href="<?= get_template_directory_uri() ?>/css/global.css">
-    <!-- <link rel="stylesheet" href="<?= get_template_directory_uri() ?>/css/joanna.css"> -->
+    <link rel="stylesheet" href="<?= get_template_directory_uri() ?>/css/joanna.css">
     <link rel="stylesheet" href="<?= get_template_directory_uri() ?>/css/photos.css">
     <link rel="stylesheet" href="<?= get_template_directory_uri() ?>/css/books.css">
     <link rel="stylesheet" href="<?= get_template_directory_uri() ?>/css/films.css">
