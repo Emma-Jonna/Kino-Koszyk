@@ -21,20 +21,20 @@ $latest_posts_query = new WP_Query($args);
 
         <div class="dropdown-container">
             <div class="dropdown-container-content">
-                <div class="dropdown-select-container">
-                    <div class="dropdown-select-placeholder">
-                        <p>All films</p>
-                        <img src="<?= get_template_directory_uri() ?>/assets/Arrow.svg">
-                    </div>
-
-                    <?php while ($latest_posts_query->have_posts()) : $latest_posts_query->the_post() ?>
-                        <a href="<?= the_permalink() ?>">
-                            <div class="dropdown-select-item">
-                                <?= the_title() ?>
-                            </div>
-                        </a>
-                    <?php endwhile ?>
-                </div>
+            <div class="dropdown-select-placeholder">
+                <p>All films</p>
+                <img src="<?= get_template_directory_uri() ?>/assets/Arrow.svg">
+            </div>
+            <div class="dropdown-select-container">
+                
+                <?php while ($latest_posts_query->have_posts()) : $latest_posts_query->the_post() ?>
+                    <a href="<?= the_permalink() ?>">
+                        <div class="dropdown-select-item">
+                            <?= the_title() ?>
+                        </div>
+                    </a>
+                <?php endwhile ?>
+            </div>
             </div>
         </div>
     </article>
