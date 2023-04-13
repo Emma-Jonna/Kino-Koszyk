@@ -39,6 +39,10 @@
                 <img src=<?php the_field('bo_photo'); ?> alt="">
             </div>
         </div>
+
+        <div class="contact-bo-button">
+            <a href="http://kino-koszyk-new.local/contact/">Contact Bo</a>
+        </div>
     </article>
 
     <article class="about__content_joanna_wrapper">
@@ -51,6 +55,7 @@
                     <?php echo the_field('about_joanna_helander'); ?>
                 </p>
             </div>
+
             <div class="contact-info-joanna">
                 <ul>
                     <li><?php echo the_field('joanna_email'); ?></li>
@@ -58,10 +63,15 @@
                 </ul>
             </div>
         </div>
+
         <div class="image-container">
             <div class="about__content_joanna_image">
                 <img src=<?php the_field('joanna_photo'); ?> alt="">
             </div>
+        </div>
+
+        <div class="contact-joanna-button">
+            <a href="http://kino-koszyk-new.local/contact/">Contact Joanna</a>
         </div>
     </article>
 </section>
