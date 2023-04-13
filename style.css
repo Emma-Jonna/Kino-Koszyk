@@ -38,11 +38,11 @@ section:first-of-type {
   margin-top: 4rem;
 }
 
-section:first-of-type:not(.home, .single) {
+section:first-of-type:not(.home, .single, .contact) {
   padding-top: 2.5rem;
 }
 
-section:not(.home) {
+section:not(.home, .contact) {
   padding: 0 1.25rem;
 }
 
@@ -68,7 +68,7 @@ a {
 }
 
 @media screen and (min-width: 700px) {
-  section:not(.home) {
+  section:not(.home, .contact) {
     padding: 0 2rem;
   }
 }
@@ -80,14 +80,14 @@ a {
     /* min-height: 80vh; */
   }
 
-  section:not(.home) {
+  section:not(.home, .contact) {
     padding: 0 5rem;
   }
   section:first-of-type {
     margin-top: 0;
   }
 
-  section:first-of-type:not(.home, .single) {
+  section:first-of-type:not(.home, .contact, .single) {
     padding-top: 5rem;
   }
 
