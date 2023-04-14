@@ -4,7 +4,6 @@ $args = array(
     "post_type" => "news",
     "orderby" => "date",
     "order" => "DESC",
-    'posts_per_page' => 6,
 );
 $latest_posts_query = new WP_Query($args);
 
@@ -28,7 +27,6 @@ $latest_posts_query = new WP_Query($args);
             <?php endwhile; ?>
         </div>
     <?php endif; ?>
-
 </section>
 
 <?php get_footer(); ?>
